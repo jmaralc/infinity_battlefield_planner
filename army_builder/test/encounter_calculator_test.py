@@ -4,6 +4,8 @@ from src.army.armyunit import ArmyUnit
 from src.army.weapon import CombiRifle
 from src.army.encounter import Encounter
 from src.army.cover import PartialCover
+from src.army.skill import Mimetism
+
 
 class TestEncounterCalculator:
 
@@ -52,7 +54,7 @@ class TestEncounterCalculator:
         shooter.weapon = CombiRifle()
         
         target = ArmyUnit(bs=13)
-        target.skills.add(Mimetism(-3))
+        target.skills.append(Mimetism(-3))
 
         encounter = Encounter({
             "shooter": shooter,
@@ -70,8 +72,8 @@ class TestEncounterCalculator:
         shooter.weapon = CombiRifle()
         
         target = ArmyUnit(bs=13)
-        target.skills.add(Mimetism(-3))
-        target.cover = Cover.PartialCover
+        target.skills.append(Mimetism(-3))
+        target.cover = PartialCover()
 
         encounter = Encounter({
             "shooter": shooter,

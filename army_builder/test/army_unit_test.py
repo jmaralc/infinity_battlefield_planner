@@ -39,6 +39,11 @@ class TestArmyUnitTestSuit:
         assert unit.points == 1
         assert unit.scw == 1
 
+    def test_a_new_unit_has_no_skills(self,):
+        unit = ArmyUnit()
+
+        assert len(unit.skills) == 0
+
     def test_a_vanilla_BS13_unit_with_no_mods_has_default_target_threshold_of_13(self,):
         unit = ArmyUnit(bs=13)
 

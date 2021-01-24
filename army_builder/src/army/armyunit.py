@@ -17,7 +17,10 @@ class ArmyUnit:
         self.points = points
         self.scw = scw
         self.weapon = NullWeapon()
+        self.skills = []
 
     def threshold_hit(self, range=0):
         return self.bs + self.weapon.modifier_at(range)
+
+    
 
