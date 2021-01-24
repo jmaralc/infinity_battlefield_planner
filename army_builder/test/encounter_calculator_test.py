@@ -68,16 +68,9 @@ class TestEncounterCalculator:
         assert result["hit"] == 0.5
 
     def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_unit_under_cover_with_mimetism_minus3_with_combi_in_bad_range(self,):
-        shooter = ArmyUnit(bs=13)
-        shooter.weapon = CombiRifle()
-        
-        target = ArmyUnit(bs=13)
-        target.skills.append(Mimetism(-3))
-        target.cover = PartialCover()
-
         encounter = Encounter({
-            "shooter": shooter,
-            "target": target,
+            "shooter": UnitBuilder().vanilla().ballistics(13).combi_rifle().build(),
+            "target": UnitBuilder().vanilla().partial_cover().mimetism().build(),
             "distance": CombiRifle.BadRange
         })
         
