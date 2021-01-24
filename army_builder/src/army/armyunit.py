@@ -1,0 +1,2 @@
+class ArmyUnit:
+    pass
