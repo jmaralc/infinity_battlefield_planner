@@ -12,7 +12,8 @@ class TestEncounterCalculator:
     def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_BS13_unit_with_null_weapon(self,):
         
         encounter = Encounter({
-            "shooter": ArmyUnit(bs=13)
+            "shooter": ArmyUnit(bs=13),
+            "target": ArmyUnit(bs=13)
         })
         
         result = encounter.compute()
@@ -25,6 +26,7 @@ class TestEncounterCalculator:
         
         encounter = Encounter({
             "shooter": shooter,
+            "target": ArmyUnit(bs=13),
             "distance": CombiRifle.GoodRange
         })
         
@@ -49,7 +51,7 @@ class TestEncounterCalculator:
         
         assert result["hit"] == 0.65 
     
-    def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_unit_with_mimetism_3minus_with_combi_in_good_range(self,):
+    def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_unit_with_mimetism_minus3_with_combi_in_good_range(self,):
         shooter = ArmyUnit(bs=13)
         shooter.weapon = CombiRifle()
         
@@ -67,7 +69,7 @@ class TestEncounterCalculator:
         assert result["hit"] == 0.65
 
     
-    def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_unit_under_cover_with_mimetism_3minus_with_combi_in_good_range(self,):
+    def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_unit_under_cover_with_mimetism_minus3_with_combi_in_good_range(self,):
         shooter = ArmyUnit(bs=13)
         shooter.weapon = CombiRifle()
         
@@ -83,4 +85,22 @@ class TestEncounterCalculator:
         
         result = encounter.compute()
         
-        assert result["hit"] == 0.35
+        assert result["hit"] == 0.5
+
+    def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_unit_under_cover_with_mimetism_minus3_with_combi_in_bad_range(self,):
+        shooter = ArmyUnit(bs=13)
+        shooter.weapon = CombiRifle()
+        
+        target = ArmyUnit(bs=13)
+        target.skills.append(Mimetism(-3))
+        target.cover = PartialCover()
+
+        encounter = Encounter({
+            "shooter": shooter,
+            "target": target,
+            "distance": CombiRifle.BadRange
+        })
+        
+        result = encounter.compute()
+        
+        assert result["hit"] == 0.05

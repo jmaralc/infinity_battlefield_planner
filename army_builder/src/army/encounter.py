@@ -5,9 +5,10 @@ class Encounter():
 
     def compute(self):
         shooter  = self.context["shooter"]
+        target   = self.context["target"]
         distance = self.context.get("distance")
 
-        hit         = shooter.threshold_to_hit(distance) /20.0
+        hit         = (shooter.threshold_to_hit(distance) + target.modifier_to_defend()) /20.0
 
         return {
             "hit": hit,

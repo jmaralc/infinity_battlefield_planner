@@ -3,6 +3,8 @@ import pytest
 from src.army.armyunit import ArmyUnit
 from src.army.weapon import CombiRifle
 from src.army.skill import Mimetism
+from src.army.cover import NoCover
+
 
 class ArmyUnitMotherObject:
     BasicUnitA = ArmyUnit()
@@ -39,6 +41,12 @@ class TestArmyUnitTestSuit:
         assert unit.ava == 1
         assert unit.points == 1
         assert unit.scw == 1
+
+    def test_a_new_unit_has_no_cover(self,):
+        unit = ArmyUnit()
+
+        assert type(unit.cover) is NoCover
+
 
     def test_a_new_unit_has_no_skills(self,):
         unit = ArmyUnit()
