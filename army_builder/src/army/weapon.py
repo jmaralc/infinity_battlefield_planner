@@ -1,11 +1,13 @@
 class Weapon:
     def __init__(self):
         pass
+
     def modifier_at(self, range):
-        return 0
+        pass
 
 class NullWeapon(Weapon):
-    pass
+    def modifier_at(self, range):
+        return  0
     
 class CombiRifle(Weapon):
     GoodRange       = 16
