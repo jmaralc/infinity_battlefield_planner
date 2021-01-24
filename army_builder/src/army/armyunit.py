@@ -1,6 +1,7 @@
 
-from src.army.weapon import NullWeapon
-from src.army.cover import NoCover
+from src.army.weapon import NullWeapon, CombiRifle
+from src.army.cover import NoCover, PartialCover
+from src.army.skill import Mimetism
 
 
 class ArmyUnit:
@@ -32,4 +33,37 @@ class ArmyUnit:
         modifier += self.cover.modifier_to_hit()
         return modifier
     
+
+class UnitBuilder:
+    def __init__(self):
+        self.unit = ArmyUnit()
+    
+    def vanilla(self):
+        self.unit = ArmyUnit(10,10,10,10,1, 1, 1, 1, 10, 0)
+        return self
+
+    def ballistics(self, profile=10):
+        self.unit.bs = profile
+        return self
+
+    def mimetism(self, modifier=-3):
+        self.unit.skills.append(Mimetism(modifier))
+        return self
+
+    def no_cover(self):
+        self.unit.cover = NoCover()
+        return self
+
+    def partial_cover(self):
+        self.unit.cover = PartialCover()
+        return self
+
+    def combi_rifle(self):
+        self.unit.weapon = CombiRifle()
+        return self
+
+    def build(self):
+        return self.unit
+
+
 
