@@ -7,7 +7,7 @@ class Encounter():
         shooter  = self.context["shooter"]
         distance = self.context.get("distance")
 
-        hit         = shooter.threshold_hit(distance) /20.0
+        hit         = shooter.threshold_to_hit(distance) /20.0
 
         return {
             "hit": hit,

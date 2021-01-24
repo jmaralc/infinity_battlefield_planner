@@ -19,8 +19,12 @@ class ArmyUnit:
         self.weapon = NullWeapon()
         self.skills = []
 
-    def threshold_hit(self, range=0):
+    def threshold_to_hit(self, range=0):
         return self.bs + self.weapon.modifier_at(range)
 
+    def modifier_to_defend(self):
+        if len(self.skills) > 0:
+            return self.skills[0].modifier_to_hit()
+        return 0
     
 

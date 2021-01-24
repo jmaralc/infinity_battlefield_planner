@@ -2,6 +2,7 @@ import pytest
 
 from src.army.armyunit import ArmyUnit
 from src.army.weapon import CombiRifle
+from src.army.skill import Mimetism
 
 class ArmyUnitMotherObject:
     BasicUnitA = ArmyUnit()
@@ -47,23 +48,29 @@ class TestArmyUnitTestSuit:
     def test_a_vanilla_BS13_unit_with_no_mods_has_default_target_threshold_of_13(self,):
         unit = ArmyUnit(bs=13)
 
-        assert unit.threshold_hit() == 13
+        assert unit.threshold_to_hit() == 13
 
     def test_a_vanilla_BS13_unit_with_combi_in_good_range_has_target_threshold_of_16(self,):
         unit = ArmyUnit(bs=13)
         unit.weapon = CombiRifle()
 
-        assert unit.threshold_hit(CombiRifle.GoodRange) == 16
+        assert unit.threshold_to_hit(CombiRifle.GoodRange) == 16
     
     def test_a_vanilla_BS13_unit_with_combi_in_medium_bad_range_has_target_threshold_of_10(self,):
         unit = ArmyUnit(bs=13)
         unit.weapon = CombiRifle()
 
-        assert unit.threshold_hit(CombiRifle.MediumBadRange) == 10
+        assert unit.threshold_to_hit(CombiRifle.MediumBadRange) == 10
 
     def test_a_vanilla_BS13_unit_with_combi_in_bad_range_has_target_threshold_of_7(self,):
         unit = ArmyUnit(bs=13)
         unit.weapon = CombiRifle()
 
-        assert unit.threshold_hit(CombiRifle.BadRange) == 7
+        assert unit.threshold_to_hit(CombiRifle.BadRange) == 7
+
+    def test_a_vanilla_BS13_unit_with_mimetism_minus3_has_a_shooter_penalty_of_minus3(self,):
+        unit = ArmyUnit(bs=13)
+        unit.skills.append(Mimetism(-3))
+
+        assert unit.modifier_to_defend() == -3
 
