@@ -1,5 +1,7 @@
 import pytest
+
 from src.army.armyunit import ArmyUnit
+from src.army.weapon import CombiRifle
 
 class ArmyUnitMotherObject:
     BasicUnitA = ArmyUnit()
@@ -24,7 +26,7 @@ class TestArmyUnitTestSuit:
         assert unit.scw == 0
 
     def test_a_new_unit_can_be_initialized(self,):
-        unit = ArmyUnit(1,1,1,1,1,1,1,1,1,1)
+        unit = ArmyUnit(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 
         assert unit.cc == 1
         assert unit.bs == 1
@@ -37,37 +39,55 @@ class TestArmyUnitTestSuit:
         assert unit.points == 1
         assert unit.scw == 1
 
-    def test_a_unit_with_no_weapon_has_probability_of_ballistic_skill_percentage(self,):
-
+    def test_a_vanilla_BS13_unit_with_no_mods_has_default_target_threshold_of_13(self,):
         unit = ArmyUnit(bs=13)
+
         assert unit.threshold_hit() == 13
 
+    def test_a_vanilla_BS13_unit_with_combi_in_good_range_has_target_threshold_of_16(self,):
+        unit = ArmyUnit(bs=13)
+        unit.weapon = CombiRifle()
 
-def test_calculate_simple_result_probabilties_for_typical_unit_pair():
+        assert unit.threshold_hit(CombiRifle.GoodRange) == 16
+    
+    def test_a_vanilla_BS13_unit_with_combi_in_medium_bad_range_has_target_threshold_of_10(self,):
+        unit = ArmyUnit(bs=13)
+        unit.weapon = CombiRifle()
+
+        assert unit.threshold_hit(CombiRifle.MediumBadRange) == 10
+
+
+def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_BS13_unit():
     
     encounter_context = {
-        "unit1": ArmyUnit(bs=13),
-        "unit2": ArmyUnitMotherObject.BasicUnitB,
-        "distance" : 10,
+        "shooter": ArmyUnit(bs=13)
     }
 
     result = compute_encounter(encounter_context)
     
-    assert result["winning"] == 0.65
-    assert result["both_death"] == 0
-    assert result["losing"] == 0.35
+    assert result["hit"] == 0.65
+    assert result["critical"] == 0.05
+    assert result["miss"] == 0.35
 
+def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS10_unit_targeting_null_state_unit():
+    encounter_context = {
+        "shooter": ArmyUnit(bs=10)
+    }
 
+    result = compute_encounter(encounter_context)
+    
+    assert result["hit"] == 0.5
+    assert result["critical"] == 0.05
+    assert result["miss"] == 0.5
 
 def compute_encounter(context):
-    unit1 = context["unit1"]
-    unit2 = context["unit2"]
-    distance = context["distance"]
+    shooter = context["shooter"]
 
-    winning = unit1.threshold_hit()/20.0
-    losing = 1 - winning
+    hit         = shooter.threshold_hit()/20.0
+    miss        = 1 - hit
+    critical    = 1/20.0
     return {
-        "winning": winning,
-        "both_death": 0,
-        "losing": losing
+        "hit": hit,
+        "critical": critical,
+        "miss": miss
     }
