@@ -1,0 +1,5434 @@
+{
+    "factions": [
+        {
+            "id": 101,
+            "parent": 101,
+            "name": "PanOceanía",
+            "slug": "panoceania",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/panoceania.svg"
+        },
+        {
+            "id": 102,
+            "parent": 101,
+            "name": "Ejército de Choque de Acontecimento",
+            "slug": "shock-army-of-acontecimento",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/shock-army-of-acontecimento.svg"
+        },
+        {
+            "id": 103,
+            "parent": 101,
+            "name": "Órdenes Militares",
+            "slug": "military-orders",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/military-orders.svg"
+        },
+        {
+            "id": 104,
+            "parent": 101,
+            "name": "Ejército Capitalino de Neoterra",
+            "slug": "neoterran-capitaline-army",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/neoterran-capitaline-army.svg"
+        },
+        {
+            "id": 105,
+            "parent": 101,
+            "name": "División de Reacción Inmediata de Varuna",
+            "slug": "varuna",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/varuna.svg"
+        },
+        {
+            "id": 106,
+            "parent": 101,
+            "name": "Svalarheima's Winter Force",
+            "slug": "winterfor",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/winterfor.svg"
+        },
+        {
+            "id": 201,
+            "parent": 201,
+            "name": "Yu Jing",
+            "slug": "yu-jing",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/yu-jing.svg"
+        },
+        {
+            "id": 202,
+            "parent": 201,
+            "name": "Servicio Imperial",
+            "slug": "imperial-service",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/imperial-service.svg"
+        },
+        {
+            "id": 204,
+            "parent": 201,
+            "name": "Ejército Invencible",
+            "slug": "invincible-army",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/invincible-army.svg"
+        },
+        {
+            "id": 205,
+            "parent": 201,
+            "name": "Estándarte Blanco",
+            "slug": "white-banner",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/white-banner.svg"
+        },
+        {
+            "id": 301,
+            "parent": 301,
+            "name": "Ariadna",
+            "slug": "ariadna",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/ariadna.svg"
+        },
+        {
+            "id": 302,
+            "parent": 301,
+            "name": "Ejército Highlander de Caledonia",
+            "slug": "caledonian-highlander-army",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/caledonian-highlander-army.svg"
+        },
+        {
+            "id": 303,
+            "parent": 301,
+            "name": "Fuerza de Respuesta Rápida Merovingia",
+            "slug": "force-de-reponse-rapide-merovingienne",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/force-de-reponse-rapide-merovingienne.svg"
+        },
+        {
+            "id": 304,
+            "parent": 301,
+            "name": "USAriadna Ranger Force",
+            "slug": "usariadna",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/usariadna.svg"
+        },
+        {
+            "id": 305,
+            "parent": 301,
+            "name": "Tartary Army Corps",
+            "slug": "tartary",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/tartary.svg"
+        },
+        {
+            "id": 306,
+            "parent": 301,
+            "name": "Kosmoflot",
+            "slug": "kosmoflot",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/kosmoflot.svg"
+        },
+        {
+            "id": 401,
+            "parent": 401,
+            "name": "Haqqislam",
+            "slug": "haqqislam",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/haqqislam.svg"
+        },
+        {
+            "id": 402,
+            "parent": 401,
+            "name": "Hassassin Bahram",
+            "slug": "hassassin-bahram",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/hassassin-bahram.svg"
+        },
+        {
+            "id": 403,
+            "parent": 401,
+            "name": "Qapu Khalqi",
+            "slug": "qapu-khalqi",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/qapu-khalqi.svg"
+        },
+        {
+            "id": 404,
+            "parent": 401,
+            "name": "Ramah Taskforce",
+            "slug": "ramah-taskforce",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/ramah-taskforce.svg"
+        },
+        {
+            "id": 501,
+            "parent": 501,
+            "name": "Nómadas",
+            "slug": "nomads",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/nomads.svg"
+        },
+        {
+            "id": 502,
+            "parent": 501,
+            "name": "Mando Jurisdiccional de Corregidor",
+            "slug": "corregidor",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/corregidor.svg"
+        },
+        {
+            "id": 503,
+            "parent": 501,
+            "name": "Mando Jurisdiccional de Bakunin",
+            "slug": "bakunin",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/bakunin.svg"
+        },
+        {
+            "id": 504,
+            "parent": 501,
+            "name": "Mando Jurisdiccional de Tunguska",
+            "slug": "tunguska",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/tunguska.svg"
+        },
+        {
+            "id": 601,
+            "parent": 601,
+            "name": "Ejército Combinado",
+            "slug": "combined-army",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/combined-army.svg"
+        },
+        {
+            "id": 602,
+            "parent": 601,
+            "name": "Fuerza de Agresión Morat",
+            "slug": "morat",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/morat.svg"
+        },
+        {
+            "id": 603,
+            "parent": 601,
+            "name": "Fuerza Expedicionaria Shasvastii",
+            "slug": "shasvastii",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/shasvastii.svg"
+        },
+        {
+            "id": 604,
+            "parent": 601,
+            "name": "Fuerza de Contacto Ónice",
+            "slug": "onyx",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/onyx.svg"
+        },
+        {
+            "id": 701,
+            "parent": 701,
+            "name": "Aleph",
+            "slug": "aleph",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/aleph.svg"
+        },
+        {
+            "id": 702,
+            "parent": 701,
+            "name": "Falange de Acero",
+            "slug": "steel-phalanx",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/steel-phalanx.svg"
+        },
+        {
+            "id": 703,
+            "parent": 701,
+            "name": "Subsección de Operaciones de la S.S.S.",
+            "slug": "operations",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/operations.svg"
+        },
+        {
+            "id": 801,
+            "parent": 801,
+            "name": "Tohaa",
+            "slug": "tohaa",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/tohaa.svg"
+        },
+        {
+            "id": 901,
+            "name": "Ejércitos No Alineados",
+            "slug": "non-aligned-armies",
+            "parent": 900,
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/non-aligned-armies.svg"
+        },
+        {
+            "id": 902,
+            "parent": 901,
+            "name": "Druze Bayram Security",
+            "slug": "druze",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/druze.svg"
+        },
+        {
+            "id": 903,
+            "parent": 901,
+            "name": "Japanese Secessionist Army",
+            "slug": "japanese-secessionist-army",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/japanese-secessionist-army.svg"
+        },
+        {
+            "id": 904,
+            "parent": 901,
+            "name": "Compañía Ikari",
+            "slug": "ikari",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/ikari.svg"
+        },
+        {
+            "id": 905,
+            "parent": 901,
+            "name": "Starco. Compañía Libre de la Estrella",
+            "slug": "starco",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/starco.svg"
+        },
+        {
+            "id": 906,
+            "parent": 901,
+            "name": "Spiral Corps",
+            "slug": "spiral-corps",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/spiral-corps.svg"
+        },
+        {
+            "id": 907,
+            "parent": 901,
+            "name": "La Compañía Extranjera",
+            "slug": "foreign-company",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/foreign-company.svg"
+        },
+        {
+            "id": 908,
+            "parent": 901,
+            "name": "La Compañía Dahshat",
+            "slug": "dahshat",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/dahshat.svg"
+        },
+        {
+            "id": 909,
+            "parent": 901,
+            "name": "Compañía Blanca",
+            "slug": "white-company",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/white-company.svg"
+        },
+        {
+            "id": 1001,
+            "parent": 1001,
+            "name": "O-12",
+            "slug": "o-12",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/o-12.svg"
+        },
+        {
+            "id": 1002,
+            "parent": 1001,
+            "name": "Starmada, Bureau Aegis Naval\nPolice Department",
+            "slug": "starmada",
+            "logo": "https://assets.corvusbelli.net/army/img/logo/factions/starmada.svg"
+        }
+    ],
+    "ammunitions": [
+        {
+            "id": 1,
+            "name": "Adhesiva"
+        },
+        {
+            "id": 2,
+            "name": "N",
+            "wiki": "https://infinitythewiki.com/Normal_(N)_Ammunition?version=n4"
+        },
+        {
+            "id": 3,
+            "name": "AP",
+            "wiki": "https://infinitythewiki.com/Armour_Piercing_(AP)_Ammunition?version=n4"
+        },
+        {
+            "id": 4,
+            "name": "N/AP/Exp"
+        },
+        {
+            "id": 5,
+            "name": "N+E/M"
+        },
+        {
+            "id": 6,
+            "name": "Exp",
+            "wiki": "https://infinitythewiki.com/Explosive_(EXP)_Ammunition?version=n4"
+        },
+        {
+            "id": 7,
+            "name": "Monofilo"
+        },
+        {
+            "id": 8,
+            "name": "Shock"
+        },
+        {
+            "id": 9,
+            "name": "DA",
+            "wiki": "https://infinitythewiki.com/Double_Action_(DA)_Ammunition?version=n4"
+        },
+        {
+            "id": 10,
+            "name": "AP+DA",
+            "wiki": "https://infinitythewiki.com/Combined_Ammunition?version=n4"
+        },
+        {
+            "id": 11,
+            "name": "Viral"
+        },
+        {
+            "id": 12,
+            "name": "E/M2"
+        },
+        {
+            "id": 13,
+            "name": "AP+Exp",
+            "wiki": "https://infinitythewiki.com/Combined_Ammunition?version=n4"
+        },
+        {
+            "id": 14,
+            "name": "E/M"
+        },
+        {
+            "id": 15,
+            "name": "N/AP"
+        },
+        {
+            "id": 16,
+            "name": "T2/N"
+        },
+        {
+            "id": 17,
+            "name": "AP/DA"
+        },
+        {
+            "id": 18,
+            "name": "T2"
+        },
+        {
+            "id": 19,
+            "name": "N+EM"
+        },
+        {
+            "id": 20,
+            "name": "N/AP/DA"
+        },
+        {
+            "id": 21,
+            "name": "Humo"
+        },
+        {
+            "id": 22,
+            "name": "Eclipse"
+        },
+        {
+            "id": 23,
+            "name": "Flash"
+        },
+        {
+            "id": 24,
+            "name": "Fuego"
+        },
+        {
+            "id": 25,
+            "name": "Rep. Posición"
+        },
+        {
+            "id": 26,
+            "name": "Nanotec"
+        },
+        {
+            "id": 27,
+            "name": "AP/Fuego"
+        },
+        {
+            "id": 28,
+            "name": "Enjambre"
+        },
+        {
+            "id": 29,
+            "name": "Aturdidora"
+        },
+        {
+            "id": 30,
+            "name": "AP+Shock",
+            "wiki": "https://infinitythewiki.com/Combined_Ammunition?version=n4"
+        },
+        {
+            "id": 31,
+            "name": "K1"
+        },
+        {
+            "id": 32,
+            "name": "Breaker"
+        },
+        {
+            "id": 33,
+            "name": "Nimbus"
+        },
+        {
+            "id": 34,
+            "name": "Plasma"
+        },
+        {
+            "id": 35,
+            "name": "AP/Shock"
+        },
+        {
+            "id": 36,
+            "name": "Feromónica"
+        },
+        {
+            "id": 37,
+            "name": "PARA",
+            "wiki": "https://infinitythewiki.com/Paralysis_(PARA)_Ammunition?version=n4"
+        },
+        {
+            "id": 38,
+            "name": "DA + Shock",
+            "wiki": "https://infinitythewiki.com/Combined_Ammunition?version=n4"
+        },
+        {
+            "id": 39,
+            "name": "AP/Shock/DA"
+        }
+    ],
+    "weapons": [
+        {
+            "id": 1,
+            "type": "WEAPON",
+            "name": "Akrylat-Kanone",
+            "ammunition": 37,
+            "burst": "1",
+            "damage": "-",
+            "saving": "FIS-6",
+            "properties": [
+                "Desechable (2)",
+                "Estado: IMM-A",
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "type": "WEAPON",
+            "name": "Ametralladora",
+            "ammunition": 2,
+            "burst": "4",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "type": "WEAPON",
+            "name": "Ametralladora AP",
+            "ammunition": 3,
+            "burst": "4",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "type": "WEAPON",
+            "name": "Ametralladora MULTI",
+            "mode": "Modo Antimaterial",
+            "ammunition": 6,
+            "burst": "1",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "type": "WEAPON",
+            "name": "Ametralladora MULTI",
+            "mode": "Modo Ráfaga",
+            "ammunition": 35,
+            "burst": "4",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 193,
+            "type": "WEAPON",
+            "name": "Arco Táctico",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "Silenciosa"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 179,
+            "type": "WEAPON",
+            "name": "Arco Táctico Viral",
+            "ammunition": 38,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "PB",
+            "properties": [
+                "Silenciosa"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 5,
+            "type": "WEAPON",
+            "name": "Arma CC",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 6,
+            "type": "WEAPON",
+            "name": "Arma CC AP",
+            "ammunition": 3,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 78,
+            "type": "WEAPON",
+            "name": "Arma CC AP + DA",
+            "ammunition": 10,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 172,
+            "type": "WEAPON",
+            "name": "Arma CC AP + Shock",
+            "ammunition": 30,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 11,
+            "type": "WEAPON",
+            "name": "Arma CC DA",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 7,
+            "type": "WEAPON",
+            "name": "Arma CC E/M",
+            "ammunition": 5,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "PB",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 8,
+            "type": "WEAPON",
+            "name": "Arma CC EXP",
+            "ammunition": 6,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 9,
+            "type": "WEAPON",
+            "name": "Arma CC Monofilo",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "12",
+            "saving": "BLI",
+            "properties": [
+                "CC",
+                "BLI=0",
+                "Estado: Muerto"
+            ],
+            "distance": null
+        },
+        {
+            "id": 71,
+            "type": "WEAPON",
+            "name": "Arma CC PARA",
+            "ammunition": 37,
+            "burst": "1",
+            "damage": "-",
+            "saving": "FIS-6",
+            "properties": [
+                "CC",
+                "No Letal",
+                "Estado: IMM-A"
+            ],
+            "distance": null
+        },
+        {
+            "id": 10,
+            "type": "WEAPON",
+            "name": "Arma CC Shock",
+            "ammunition": 8,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 153,
+            "type": "WEAPON",
+            "name": "Arma CC T2",
+            "ammunition": 18,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "CC",
+                "Antimaterial"
+            ],
+            "distance": null
+        },
+        {
+            "id": 13,
+            "type": "WEAPON",
+            "name": "Arma CC Viral",
+            "ammunition": 38,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "PB",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 149,
+            "type": "WEAPON",
+            "name": "Arma CC Vorpal",
+            "mode": "Modo Arrojadizo",
+            "wiki": "https://infinitythewiki.com/Mixed_Weapons?version=c1",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "12",
+            "saving": "BLI",
+            "properties": [
+                "Arma Arrojadiza",
+                "BLI=0",
+                "Estado: Muerto"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "max": null,
+                "med": null,
+                "long": null
+            }
+        },
+        {
+            "id": 149,
+            "type": "WEAPON",
+            "name": "Arma CC Vorpal",
+            "mode": "Modo CC",
+            "wiki": "https://infinitythewiki.com/Mixed_Weapons?version=c1",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "12",
+            "saving": "BLI",
+            "properties": [
+                "CC",
+                "BLI=0",
+                "Estado: Muerto"
+            ],
+            "distance": null
+        },
+        {
+            "id": 127,
+            "type": "WEAPON",
+            "name": "Arma en Fuego de Supresión",
+            "ammunition": "0",
+            "burst": "3",
+            "damage": "-",
+            "saving": "*",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 14,
+            "type": "WEAPON",
+            "name": "Blitzen",
+            "ammunition": 14,
+            "burst": "1",
+            "damage": "14",
+            "saving": "PB",
+            "properties": [
+                "Desechable (2)",
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 15,
+            "type": "WEAPON",
+            "name": "Cañon Magnético Hiperrápido",
+            "mode": "Modo Antimaterial",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "0"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 15,
+            "type": "WEAPON",
+            "name": "Cañon Magnético Hiperrápido",
+            "mode": "Modo Ráfaga",
+            "ammunition": 35,
+            "burst": "5",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "0"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 16,
+            "type": "WEAPON",
+            "name": "Cañon Portátil Automático",
+            "ammunition": 13,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 111,
+            "type": "WEAPON",
+            "name": "Carabina de Plasma",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "13",
+            "saving": "BLI+PB",
+            "properties": [
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 111,
+            "type": "WEAPON",
+            "name": "Carabina de Plasma",
+            "mode": "Modo Impacto",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI+PB",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 17,
+            "type": "WEAPON",
+            "name": "Cargas-D",
+            "mode": "Arma CC",
+            "wiki": "https://infinitythewiki.com/D-Charges?version=c1",
+            "ammunition": 13,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "CC",
+                "Desechable (3)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 17,
+            "type": "WEAPON",
+            "name": "Cargas-D",
+            "mode": "Arma Posicionable",
+            "wiki": "https://infinitythewiki.com/D-Charges?version=c1",
+            "ammunition": 13,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "Desechable (3)",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 18,
+            "type": "WEAPON",
+            "name": "Chain Rifle",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Plantilla Directa (Lágrima Grande)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 80,
+            "type": "WEAPON",
+            "name": "Chain-colt",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 174,
+            "type": "WEAPON",
+            "name": "Ciberminas",
+            "wiki": "https://infinitythewiki.com/Cybermines?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "15",
+            "profile": "BLI=0, PB=0, EST=1, S=X",
+            "saving": "PB",
+            "properties": [
+                "Ataque de Comunicaciones",
+                "Ataque Intuitivo",
+                "Camuflado",
+                "Desechable (3)",
+                "No Letal",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 19,
+            "type": "WEAPON",
+            "name": "Contender",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 20,
+            "type": "WEAPON",
+            "name": "CrazyKoala",
+            "wiki": "https://infinitythewiki.com/CrazyKoala?version=c1",
+            "ammunition": 8,
+            "burst": "1",
+            "damage": "15",
+            "profile": "BLI=0, PB=0, EST=1, S=1",
+            "saving": "BLI",
+            "properties": [
+                "Desechable (2)",
+                "Impulsión",
+                "Perimetral",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 238,
+            "type": "EQUIPMENT",
+            "name": "Desactivador",
+            "wiki": "https://infinitythewiki.com/Deactivator?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "-",
+            "saving": "",
+            "properties": [
+                "Arma Técnica",
+                "Ataque CD"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+6"
+                },
+                "max": null,
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 131,
+            "type": "SKILL",
+            "name": "Descubrir",
+            "wiki": "https://infinitythewiki.com/Discover?version=c1",
+            "ammunition": 0,
+            "burst": "-",
+            "damage": "-",
+            "saving": "",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 176,
+            "type": "WEAPON",
+            "name": "Dispersador de Minas",
+            "wiki": "https://infinitythewiki.com/Mines#Mine_Dispenser?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "-",
+            "saving": "-",
+            "properties": [
+                "Disparo Doble",
+                "Ataque Especulativo",
+                "Desechable (2)",
+                "Sin Objetivo"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 100,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 96,
+            "type": "WEAPON",
+            "name": "Drop Bears",
+            "mode": "Arma Arrojadiza",
+            "wiki": "https://infinitythewiki.com/Mines#Drop_Bears?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "-",
+            "saving": "-",
+            "properties": [
+                "Arma Arrojadiza",
+                "Ataque Especulativo",
+                "Desechable (3)",
+                "Sin Objetivo"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "max": null,
+                "med": {
+                    "max": 40,
+                    "mod": "-3"
+                },
+                "long": null
+            }
+        },
+        {
+            "id": 96,
+            "type": "WEAPON",
+            "name": "Drop Bears",
+            "mode": "Arma Posicionable",
+            "wiki": "https://infinitythewiki.com/Mines#Drop_Bears?version=c1",
+            "ammunition": 8,
+            "burst": "1",
+            "damage": "13",
+            "profile": "BLI=0, PB=0, EST=1, S=X",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Desechable (3)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 23,
+            "type": "WEAPON",
+            "name": "E/Marat",
+            "ammunition": 14,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "No Letal",
+                "Plantilla Directa (Lágrima Grande)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 25,
+            "type": "WEAPON",
+            "name": "E/Mitter",
+            "ammunition": 14,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 26,
+            "type": "WEAPON",
+            "name": "Escopeta de Abordaje",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 26,
+            "type": "WEAPON",
+            "name": "Escopeta de Abordaje",
+            "mode": "Modo Impacto",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 27,
+            "type": "WEAPON",
+            "name": "Escopeta de Abordaje T2",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 27,
+            "type": "WEAPON",
+            "name": "Escopeta de Abordaje T2",
+            "mode": "Modo Impacto",
+            "ammunition": 18,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 28,
+            "type": "WEAPON",
+            "name": "Escopeta Ligera",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 28,
+            "type": "WEAPON",
+            "name": "Escopeta Ligera",
+            "mode": "Modo Impacto",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 29,
+            "type": "WEAPON",
+            "name": "Escopeta Pesada",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 29,
+            "type": "WEAPON",
+            "name": "Escopeta Pesada",
+            "mode": "Modo Impacto",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 81,
+            "type": "WEAPON",
+            "name": "Escopeta Vulkan",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Daño Contínuo",
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 81,
+            "type": "WEAPON",
+            "name": "Escopeta Vulkan",
+            "mode": "Modo Impacto",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 240,
+            "type": "EQUIPMENT",
+            "name": "FastPanda",
+            "wiki": "https://infinitythewiki.com/FastPanda?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "-",
+            "profile": "BLI=0, PB=0, EST=1, S=1",
+            "saving": "",
+            "properties": [
+                "Desechable (1)",
+                "Indiscriminado",
+                "Perimetral",
+                "Posicionable",
+                "Zona de Control"
+            ],
+            "distance": null
+        },
+        {
+            "id": 30,
+            "type": "WEAPON",
+            "name": "Feuerbach",
+            "mode": "Modo Explosivo",
+            "ammunition": 6,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "0"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 30,
+            "type": "WEAPON",
+            "name": "Feuerbach",
+            "mode": "Modo Ráfaga",
+            "ammunition": 10,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "0"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 82,
+            "type": "WEAPON",
+            "name": "Flammenspeer",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Daño Contínuo",
+                "Desechable (2)",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 82,
+            "type": "WEAPON",
+            "name": "Flammenspeer",
+            "mode": "Modo Impacto",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Daño Contínuo",
+                "Desechable (2)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 31,
+            "type": "WEAPON",
+            "name": "Fusil",
+            "ammunition": 2,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 100,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 32,
+            "type": "WEAPON",
+            "name": "Fusil AP",
+            "ammunition": 3,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 100,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 109,
+            "type": "WEAPON",
+            "name": "Fusil Breaker",
+            "ammunition": 3,
+            "burst": "3",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 100,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 33,
+            "type": "WEAPON",
+            "name": "Fusil Combi",
+            "ammunition": 2,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 103,
+            "type": "WEAPON",
+            "name": "Fusil Combi Breaker",
+            "ammunition": 3,
+            "burst": "3",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 95,
+            "type": "WEAPON",
+            "name": "Fusil Combi K1",
+            "ammunition": 2,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "BLI=0",
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 83,
+            "type": "WEAPON",
+            "name": "Fusil Combi Viral",
+            "ammunition": 38,
+            "burst": "3",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 34,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador",
+            "ammunition": 8,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 35,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador AP",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 113,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador de Plasma",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI+PB",
+            "properties": [
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 113,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador de Plasma",
+            "mode": "Modo Impacto",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI+PB",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 110,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador K1",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "BLI=0"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 36,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador MULTI",
+            "mode": "Modo Antimaterial",
+            "ammunition": 9,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 36,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador MULTI",
+            "mode": "Modo Ráfaga",
+            "ammunition": 35,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 38,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador T2",
+            "ammunition": 18,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 39,
+            "type": "WEAPON",
+            "name": "Fusil de Francotirador Viral",
+            "ammunition": 38,
+            "burst": "2",
+            "damage": "15",
+            "saving": "PB",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 40,
+            "type": "WEAPON",
+            "name": "Fusil de Plasma",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI+PB",
+            "properties": [
+                "Fuego de Supresión",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 40,
+            "type": "WEAPON",
+            "name": "Fusil de Plasma",
+            "mode": "Modo Impacto",
+            "ammunition": 2,
+            "burst": "3",
+            "damage": "14",
+            "saving": "BLI+PB",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 84,
+            "type": "WEAPON",
+            "name": "Fusil de Precisión",
+            "ammunition": 2,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 85,
+            "type": "WEAPON",
+            "name": "Fusil de Precisión AP",
+            "ammunition": 3,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 181,
+            "type": "WEAPON",
+            "name": "Fusil de Precisión K1",
+            "ammunition": 2,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "BLI=0",
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 169,
+            "type": "WEAPON",
+            "name": "Fusil de Precisión MULTI",
+            "mode": "Modo Antimaterial",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 169,
+            "type": "WEAPON",
+            "name": "Fusil de Precisión MULTI",
+            "mode": "Modo Ráfaga",
+            "ammunition": 35,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 155,
+            "type": "WEAPON",
+            "name": "Fusil de Precisión Shock",
+            "ammunition": 8,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 180,
+            "type": "WEAPON",
+            "name": "Fusil de Precisión T2",
+            "ammunition": 18,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 41,
+            "type": "WEAPON",
+            "name": "Fusil MULTI",
+            "mode": "Modo Antimaterial",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 41,
+            "type": "WEAPON",
+            "name": "Fusil MULTI",
+            "mode": "Modo Ráfaga",
+            "ammunition": 35,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "-3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 42,
+            "type": "WEAPON",
+            "name": "Fusil T2",
+            "ammunition": 18,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 100,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 43,
+            "type": "WEAPON",
+            "name": "Fusil Viral",
+            "ammunition": 38,
+            "burst": "3",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 100,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 237,
+            "type": "EQUIPMENT",
+            "name": "GizmoKit",
+            "wiki": "https://infinitythewiki.com/GizmoKit?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "-",
+            "saving": "",
+            "properties": [
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "max": null,
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 44,
+            "type": "WEAPON",
+            "name": "Granadas",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Especulativo",
+                "Arma Arrojadiza",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 45,
+            "type": "WEAPON",
+            "name": "Granadas de Humo",
+            "ammunition": 21,
+            "burst": "1",
+            "damage": "-",
+            "saving": "-",
+            "properties": [
+                "Ataque Especulativo",
+                "Arma Arrojadiza",
+                "Plantilla Terminal (Circular)",
+                "No Letal",
+                "Sin Objetivo"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 47,
+            "type": "WEAPON",
+            "name": "Granadas E/M",
+            "ammunition": 14,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Ataque Especulativo",
+                "Arma Arrojadiza",
+                "Plantilla Terminal (Circular)",
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 46,
+            "type": "WEAPON",
+            "name": "Granadas Eclipse",
+            "ammunition": 22,
+            "burst": "1",
+            "damage": "-",
+            "saving": "-",
+            "properties": [
+                "Ataque Especulativo",
+                "Arma Arrojadiza",
+                "Plantilla Terminal (Circular)",
+                "No Letal",
+                "Reflectante",
+                "Sin Objetivo"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 87,
+            "type": "WEAPON",
+            "name": "Jammer",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Arma Técnica",
+                "Ataque de Comunicaciones",
+                "Ataque Intuitivo",
+                "Desechable (2)",
+                "Estado: Aislado",
+                "No Letal",
+                "Sin LDT",
+                "Zona de Control"
+            ],
+            "distance": null
+        },
+        {
+            "id": 49,
+            "type": "WEAPON",
+            "name": "Katyusha MRL",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "Ataque Especulativo",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 50,
+            "type": "WEAPON",
+            "name": "Lanzaadhesivo",
+            "ammunition": 37,
+            "burst": "1",
+            "damage": "-",
+            "saving": "FIS-6",
+            "properties": [
+                "Estado: IMM-A",
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 88,
+            "type": "WEAPON",
+            "name": "Lanzacohetes Ligero",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Daño Contínuo",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 88,
+            "type": "WEAPON",
+            "name": "Lanzacohetes Ligero",
+            "mode": "Modo Impacto",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Daño Contínuo"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 89,
+            "type": "WEAPON",
+            "name": "Lanzacohetes Pesado",
+            "mode": "Modo Expansivo",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Daño Contínuo",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 89,
+            "type": "WEAPON",
+            "name": "Lanzacohetes Pesado",
+            "mode": "Modo Impacto",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Daño Contínuo"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 194,
+            "type": "WEAPON",
+            "name": "Lanzagranadas",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Especulativo",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 195,
+            "type": "WEAPON",
+            "name": "Lanzagranadas de Humo",
+            "ammunition": 21,
+            "burst": "1",
+            "damage": "-",
+            "saving": "-",
+            "properties": [
+                "Ataque Especulativo",
+                "No Letal",
+                "Plantilla Terminal (Circular)",
+                "Sin Objetivo"
+            ],
+            "distance": {
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 201,
+            "type": "WEAPON",
+            "name": "Lanzagranadas E/M",
+            "ammunition": 14,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Ataque Especulativo",
+                "No Letal",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 76,
+            "type": "WEAPON",
+            "name": "Lanzagranadas Eclipse",
+            "ammunition": 22,
+            "burst": "1",
+            "damage": "-",
+            "saving": "-",
+            "properties": [
+                "Ataque Especulativo",
+                "No Letal",
+                "Plantilla Terminal (Circular)",
+                "Reflectante",
+                "Sin Objetivo"
+            ],
+            "distance": {
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 56,
+            "type": "WEAPON",
+            "name": "Lanzallamas Ligero",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Daño Contínuo"
+            ],
+            "distance": null
+        },
+        {
+            "id": 57,
+            "type": "WEAPON",
+            "name": "Lanzallamas Pesado",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Plantilla Directa (Lágrima Grande)",
+                "Daño Contínuo"
+            ],
+            "distance": null
+        },
+        {
+            "id": 58,
+            "type": "WEAPON",
+            "name": "Lanzamisiles",
+            "mode": "Modo Explosivo",
+            "ammunition": 6,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "Plantilla Terminal (Circular)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 58,
+            "type": "WEAPON",
+            "name": "Lanzamisiles",
+            "mode": "Modo Impacto",
+            "ammunition": 13,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 240,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 150,
+            "type": "WEAPON",
+            "name": "MadTraps",
+            "wiki": "https://infinitythewiki.com/Perimeter_Weapons#Perimeter_Weapons_and_the_Boost_Trait?version=c1",
+            "ammunition": 37,
+            "burst": "1",
+            "damage": "-",
+            "profile": "BLI=0, PB=0, EST=1, S=1",
+            "saving": "FIS-6",
+            "properties": [
+                "Estado: IMM-A",
+                "Desechable (2)",
+                "Impulsión",
+                "No Letal",
+                "Perimetral",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 106,
+            "type": "EQUIPMENT",
+            "name": "MediKit",
+            "wiki": "https://infinitythewiki.com/MediKit?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "-",
+            "saving": "",
+            "properties": [
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "max": null,
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 61,
+            "type": "WEAPON",
+            "name": "Mina Antipersona",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Camuflado",
+                "Desechable (3)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 199,
+            "type": "WEAPON",
+            "name": "Minas AP",
+            "ammunition": 3,
+            "burst": "1",
+            "damage": "13",
+            "profile": "BLI=0, PB=0, EST=1, S=X",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Camuflado",
+                "Desechable (3)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 197,
+            "type": "WEAPON",
+            "name": "Minas E/M",
+            "ammunition": 14,
+            "burst": "1",
+            "damage": "13",
+            "profile": "BLI=0, PB=0, EST=1, S=X",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "Camuflado",
+                "Desechable (3)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "No Letal",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 62,
+            "type": "WEAPON",
+            "name": "Minas Monofilo",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "12",
+            "profile": "BLI=0, PB=0, EST=1, S=X",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Camuflado",
+                "Desechable (3)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Posicionable",
+                "BLI=0",
+                "Estado: Muerto"
+            ],
+            "distance": null
+        },
+        {
+            "id": 147,
+            "type": "WEAPON",
+            "name": "Minas Pectoral",
+            "mode": "Modo CC",
+            "ammunition": 8,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Ataque CC (+3)",
+                "Desechable (2)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 147,
+            "type": "WEAPON",
+            "name": "Minas Pectoral",
+            "mode": "Modo CD",
+            "ammunition": 8,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Desechable (2)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Disparo Doble"
+            ],
+            "distance": null
+        },
+        {
+            "id": 196,
+            "type": "WEAPON",
+            "name": "Minas Shock",
+            "ammunition": 8,
+            "burst": "1",
+            "damage": "13",
+            "profile": "BLI=0, PB=0, EST=1, S=X",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Intuitivo",
+                "Camuflado",
+                "Desechable (3)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 63,
+            "type": "WEAPON",
+            "name": "Minas Viral",
+            "ammunition": 38,
+            "burst": "1",
+            "damage": "13",
+            "profile": "BLI=0, PB=0, EST=1, S=X",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "Camuflado",
+                "Desechable (3)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 64,
+            "type": "WEAPON",
+            "name": "Mk12",
+            "ammunition": 2,
+            "burst": "3",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 65,
+            "type": "WEAPON",
+            "name": "Nanopulser",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 59,
+            "type": "SKILL",
+            "name": "Observador de Artillería",
+            "wiki": "https://infinitythewiki.com/Forward_Observer?version=c1",
+            "ammunition": 0,
+            "burst": "2",
+            "damage": "-",
+            "saving": "",
+            "properties": [
+                "Arma Técnica",
+                "Estado: Marcado",
+                "No Letal"
+            ],
+            "distance": {
+                "max": {
+                    "max": 240,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 67,
+            "type": "WEAPON",
+            "name": "Ohotnik",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 80,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "0"
+                }
+            }
+        },
+        {
+            "id": 68,
+            "type": "WEAPON",
+            "name": "Panzerfaust",
+            "ammunition": 13,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "Desechable (2)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "-3"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "+3"
+                }
+            }
+        },
+        {
+            "id": 186,
+            "type": "WEAPON",
+            "name": "Phero-Booster",
+            "mode": "Modo Impacto",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "16",
+            "saving": "PB",
+            "properties": [
+                "Bioarma",
+                "Ataque de Comunicaciones",
+                "Estado: Marcado",
+                "Arma Técnica"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 186,
+            "type": "WEAPON",
+            "name": "Phero-Booster",
+            "mode": "Modo Ráfaga",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "14",
+            "saving": "PB",
+            "properties": [
+                "Bioarma",
+                "Ataque de Comunicaciones",
+                "Estado: Marcado",
+                "Arma Técnica"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 69,
+            "type": "WEAPON",
+            "name": "Pistola",
+            "mode": "Modo CC",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "11",
+            "saving": "BLI",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 69,
+            "type": "WEAPON",
+            "name": "Pistola",
+            "mode": "Modo Ráfaga",
+            "ammunition": 2,
+            "burst": "2",
+            "damage": "11",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 92,
+            "type": "WEAPON",
+            "name": "Pistola Aturdidora",
+            "mode": "Modo CC",
+            "ammunition": 29,
+            "burst": "1",
+            "damage": "11",
+            "saving": "PB",
+            "properties": [
+                "CC",
+                "No Letal"
+            ],
+            "distance": null
+        },
+        {
+            "id": 92,
+            "type": "WEAPON",
+            "name": "Pistola Aturdidora",
+            "mode": "Modo Ráfaga",
+            "ammunition": 29,
+            "burst": "2",
+            "damage": "11",
+            "saving": "PB",
+            "properties": [
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 98,
+            "type": "WEAPON",
+            "name": "Pistola Breaker",
+            "mode": "Modo CC",
+            "ammunition": 3,
+            "burst": "1",
+            "damage": "12",
+            "saving": "PB",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 98,
+            "type": "WEAPON",
+            "name": "Pistola Breaker",
+            "mode": "Modo Ráfaga",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "12",
+            "saving": "PB",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 70,
+            "type": "WEAPON",
+            "name": "Pistola de Asalto",
+            "mode": "Modo CC",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 70,
+            "type": "WEAPON",
+            "name": "Pistola de Asalto",
+            "mode": "Modo Ráfaga",
+            "ammunition": 2,
+            "burst": "4",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 189,
+            "type": "WEAPON",
+            "name": "Pistola MULTI",
+            "mode": "Modo Antimaterial",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 189,
+            "type": "WEAPON",
+            "name": "Pistola MULTI",
+            "mode": "Modo CC",
+            "ammunition": 39,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "CC",
+                "Anti-Material (DA)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 189,
+            "type": "WEAPON",
+            "name": "Pistola MULTI",
+            "mode": "Modo Ráfaga",
+            "ammunition": 35,
+            "burst": "2",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 107,
+            "type": "WEAPON",
+            "name": "Pistola Pesada",
+            "mode": "Modo CC",
+            "ammunition": 8,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 107,
+            "type": "WEAPON",
+            "name": "Pistola Pesada",
+            "mode": "Modo Ráfaga",
+            "ammunition": 8,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "max": null,
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 100,
+            "type": "WEAPON",
+            "name": "Pistola Pesada AP",
+            "mode": "Modo CC",
+            "ammunition": 3,
+            "burst": "1",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 100,
+            "type": "WEAPON",
+            "name": "Pistola Pesada AP",
+            "mode": "Modo Ráfaga",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "max": null,
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 156,
+            "type": "WEAPON",
+            "name": "Pistola Viral",
+            "mode": "Modo CC",
+            "ammunition": 38,
+            "burst": "1",
+            "damage": "12",
+            "saving": "PB",
+            "properties": [
+                "CC"
+            ],
+            "distance": null
+        },
+        {
+            "id": 156,
+            "type": "WEAPON",
+            "name": "Pistola Viral",
+            "mode": "Modo Ráfaga",
+            "ammunition": 38,
+            "burst": "2",
+            "damage": "12",
+            "saving": "PB",
+            "properties": [],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-6"
+                }
+            }
+        },
+        {
+            "id": 154,
+            "type": "WEAPON",
+            "name": "Pitcher",
+            "wiki": "https://infinitythewiki.com/Pitcher?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "-",
+            "saving": "-",
+            "properties": [
+                "Ataque Especulativo",
+                "Desechable (2)",
+                "Indiscriminado",
+                "No Letal",
+                "Sin Objetivo"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 100,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 72,
+            "type": "WEAPON",
+            "name": "Pulso Flash",
+            "ammunition": 29,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Arma Técnica",
+                "No Letal"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 120,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 145,
+            "type": "WEAPON",
+            "name": "Pulzar",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "Plantilla Directa (Lágrima Grande)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 152,
+            "type": "WEAPON",
+            "name": "Red Fury",
+            "ammunition": 8,
+            "burst": "4",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 187,
+            "type": "WEAPON",
+            "name": "Riotstopper Ligero",
+            "ammunition": 37,
+            "burst": "1",
+            "damage": "-",
+            "saving": "FIS-6",
+            "properties": [
+                "Estado: IMM-A",
+                "No Letal",
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 188,
+            "type": "WEAPON",
+            "name": "Riotstopper Pesado",
+            "ammunition": 37,
+            "burst": "1",
+            "damage": "-",
+            "saving": "FIS-6",
+            "properties": [
+                "Estado: IMM-A",
+                "No Letal",
+                "Plantilla Directa (Lágrima Grande)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 73,
+            "type": "WEAPON",
+            "name": "Sepsitor",
+            "wiki": "https://infinitythewiki.com/Sepsitor?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "VOL",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "Desechable (2)",
+                "Plantilla Directa (Lágrima Grande)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 114,
+            "type": "WEAPON",
+            "name": "Sepsitor Plus",
+            "wiki": "https://infinitythewiki.com/Sepsitor?version=c1",
+            "ammunition": 0,
+            "burst": "1",
+            "damage": "VOL",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "Plantilla Directa (Lágrima Grande)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 158,
+            "type": "WEAPON",
+            "name": "SimbioBicho",
+            "wiki": "https://infinitythewiki.com/Perimeter_Weapons#Perimeter_Weapons_and_the_Boost_Trait?version=c1",
+            "ammunition": 2,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Desechable (2)",
+                "Estado: Marcado",
+                "Impulsión",
+                "Perimetral",
+                "Posicionable"
+            ],
+            "distance": null
+        },
+        {
+            "id": 74,
+            "type": "WEAPON",
+            "name": "Spitfire",
+            "ammunition": 2,
+            "burst": "4",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 157,
+            "type": "WEAPON",
+            "name": "Spitfire AP",
+            "ammunition": 3,
+            "burst": "4",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 60,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 80,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 77,
+            "type": "WEAPON",
+            "name": "Subfusil",
+            "ammunition": 35,
+            "burst": "3",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Fuego de Supresión"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "+3"
+                },
+                "max": {
+                    "max": 80,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "0"
+                },
+                "long": {
+                    "max": 60,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 144,
+            "type": "WEAPON",
+            "name": "SymbioBomb",
+            "mode": "Modo Endgame",
+            "wiki": "https://infinitythewiki.com/SymbioBomb?version=c1",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Bioarma",
+                "Ataque de Comunicaciones",
+                "Sin LDT",
+                "Arma Técnica",
+                "Zona de Control"
+            ],
+            "distance": null
+        },
+        {
+            "id": 144,
+            "type": "WEAPON",
+            "name": "SymbioBomb",
+            "mode": "Modo Eraser",
+            "wiki": "https://infinitythewiki.com/SymbioBomb?version=c1",
+            "ammunition": 9,
+            "burst": "2",
+            "damage": "14",
+            "saving": "PB",
+            "properties": [
+                "Bioarma",
+                "Ataque de Comunicaciones",
+                "Sin LDT",
+                "No Letal",
+                "Estado: Aislado",
+                "Arma Técnica",
+                "Zona de Control"
+            ],
+            "distance": null
+        },
+        {
+            "id": 144,
+            "type": "WEAPON",
+            "name": "SymbioBomb",
+            "mode": "Modo Mirrorball",
+            "wiki": "https://infinitythewiki.com/SymbioBomb?version=c1",
+            "ammunition": 22,
+            "burst": "1",
+            "damage": "-",
+            "saving": "PB",
+            "properties": [
+                "Ataque de Comunicaciones",
+                "Sin LDT",
+                "Reflectante",
+                "Sin Objetivo",
+                "Arma Técnica",
+                "Plantilla Terminal (Circular)",
+                "Zona de Control"
+            ],
+            "distance": null
+        },
+        {
+            "id": 203,
+            "type": "WEAPON",
+            "name": "Tácticas Pheroware: Endgame",
+            "ammunition": 3,
+            "burst": "2",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Bioarma",
+                "Ataque de Comunicaciones",
+                "Sin LDT",
+                "Arma Técnica",
+                "Zona de Control"
+            ],
+            "distance": null
+        },
+        {
+            "id": 204,
+            "type": "WEAPON",
+            "name": "Tácticas Pheroware: Eraser",
+            "ammunition": 9,
+            "burst": "2",
+            "damage": "14",
+            "saving": "PB",
+            "properties": [
+                "Bioarma",
+                "Ataque de Comunicaciones",
+                "Sin LDT",
+                "No Letal",
+                "Estado: Aislado",
+                "Arma Técnica",
+                "Zona de Control"
+            ],
+            "distance": null
+        },
+        {
+            "id": 205,
+            "type": "WEAPON",
+            "name": "Tácticas Pheroware: Mirrorball",
+            "ammunition": 22,
+            "burst": "1",
+            "damage": "-",
+            "saving": "PB",
+            "properties": [
+                "Ataque de Comunicaciones",
+                "Sin LDT",
+                "Reflectante",
+                "Sin Objetivo",
+                "Arma Técnica",
+                "Plantilla Terminal (Circular)",
+                "Zona de Control"
+            ],
+            "distance": null
+        },
+        {
+            "id": 177,
+            "type": "WEAPON",
+            "name": "Trench-Hammer",
+            "mode": "Modo Arrojadizo",
+            "wiki": "https://infinitythewiki.com/Mixed_Weapons?version=c1",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "13",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "Arma Arrojadiza",
+                "Desechable (3)"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": null,
+                "med": null,
+                "long": null
+            }
+        },
+        {
+            "id": 177,
+            "type": "WEAPON",
+            "name": "Trench-Hammer",
+            "mode": "Modo CC",
+            "wiki": "https://infinitythewiki.com/Mixed_Weapons?version=c1",
+            "ammunition": 9,
+            "burst": "1",
+            "damage": "FIS",
+            "saving": "BLI",
+            "properties": [
+                "Antimaterial",
+                "CC",
+                "Desechable (3)"
+            ],
+            "distance": null
+        },
+        {
+            "id": 75,
+            "type": "WEAPON",
+            "name": "Uragan MRL",
+            "mode": "Modo Expansivo",
+            "ammunition": 30,
+            "burst": "3",
+            "damage": "14",
+            "saving": "BLI",
+            "properties": [
+                "Ataque Especulativo",
+                "Plantilla Terminal (Circular)",
+                "Ráfaga: Blanco Único"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 75,
+            "type": "WEAPON",
+            "name": "Uragan MRL",
+            "mode": "Modo Impacto",
+            "ammunition": 30,
+            "burst": "3",
+            "damage": "15",
+            "saving": "BLI",
+            "properties": [
+                "Ráfaga: Blanco Único"
+            ],
+            "distance": {
+                "short": {
+                    "max": 20,
+                    "mod": "0"
+                },
+                "max": {
+                    "max": 120,
+                    "mod": "-6"
+                },
+                "med": {
+                    "max": 40,
+                    "mod": "+3"
+                },
+                "long": {
+                    "max": 100,
+                    "mod": "-3"
+                }
+            }
+        },
+        {
+            "id": 182,
+            "type": "WEAPON",
+            "name": "Wildparrot",
+            "ammunition": 14,
+            "burst": "1",
+            "damage": "13",
+            "profile": "BLI=0, PB=0, EST=1, S=1",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "Desechable (1)",
+                "Plantilla Directa (Lágrima Pequeña)",
+                "Posicionable",
+                "Perimetral"
+            ],
+            "distance": null
+        },
+        {
+            "id": 175,
+            "type": "WEAPON",
+            "name": "Zapper",
+            "ammunition": 14,
+            "burst": "1",
+            "damage": "13",
+            "saving": "PB",
+            "properties": [
+                "Ataque Intuitivo",
+                "No Letal",
+                "Plantilla Directa (Lágrima Pequeña)"
+            ],
+            "distance": null
+        }
+    ],
+    "skills": [
+        {
+            "id": 19,
+            "name": "Artes Marciales N1",
+            "wiki": "https://infinitythewiki.com/Martial_Arts?version=n4"
+        },
+        {
+            "id": 20,
+            "name": "Artes Marciales N2",
+            "wiki": "https://infinitythewiki.com/Martial_Arts?version=n4"
+        },
+        {
+            "id": 21,
+            "name": "Artes Marciales N3",
+            "wiki": "https://infinitythewiki.com/Martial_Arts?version=n4"
+        },
+        {
+            "id": 22,
+            "name": "Artes Marciales N4",
+            "wiki": "https://infinitythewiki.com/Martial_Arts?version=n4"
+        },
+        {
+            "id": 23,
+            "name": "Artes Marciales N5",
+            "wiki": "https://infinitythewiki.com/Martial_Arts?version=n4"
+        },
+        {
+            "id": 24,
+            "name": "Berserk",
+            "wiki": "https://infinitythewiki.com/Berserk?version=n4"
+        },
+        {
+            "id": 25,
+            "name": "Botín",
+            "wiki": "https://infinitythewiki.com/Booty?version=n4"
+        },
+        {
+            "id": 26,
+            "name": "Cadena de Mando",
+            "wiki": "https://infinitythewiki.com/Chain_of_Command?version=n4"
+        },
+        {
+            "id": 28,
+            "name": "Mimetismo",
+            "wiki": "https://infinitythewiki.com/Mimetism?version=n4"
+        },
+        {
+            "id": 29,
+            "name": "Camuflaje",
+            "wiki": "https://infinitythewiki.com/Camouflage?version=n4"
+        },
+        {
+            "id": 33,
+            "name": "Paracaidista",
+            "wiki": "https://infinitythewiki.com/Parachutist?version=n4"
+        },
+        {
+            "id": 35,
+            "name": "Salto de Combate",
+            "wiki": "https://infinitythewiki.com/Combat_Jump?version=n4"
+        },
+        {
+            "id": 38,
+            "name": "Explotar",
+            "wiki": "https://infinitythewiki.com/Explode?version=n4"
+        },
+        {
+            "id": 39,
+            "name": "Guerrero Nato",
+            "wiki": "https://infinitythewiki.com/Natural_Born_Warrior?version=n4"
+        },
+        {
+            "id": 40,
+            "name": "Esquivar",
+            "wiki": "https://infinitythewiki.com/Dodge?version=n4"
+        },
+        {
+            "id": 46,
+            "name": "Infiltración Inferior",
+            "wiki": "https://infinitythewiki.com/Infiltrate?version=n4"
+        },
+        {
+            "id": 47,
+            "name": "Infiltración",
+            "wiki": "https://infinitythewiki.com/Infiltrate?version=n4"
+        },
+        {
+            "id": 48,
+            "name": "Infiltración Superior",
+            "wiki": "https://infinitythewiki.com/Infiltrate?version=n4"
+        },
+        {
+            "id": 49,
+            "name": "Ingeniero",
+            "wiki": "https://infinitythewiki.com/Engineer?version=n4"
+        },
+        {
+            "id": 52,
+            "name": "Liderazgo Inspirador",
+            "wiki": "https://infinitythewiki.com/Inspiring_Leadership?version=n4"
+        },
+        {
+            "id": 53,
+            "name": "Médico",
+            "wiki": "https://infinitythewiki.com/Doctor?version=n4"
+        },
+        {
+            "id": 55,
+            "name": "MetaQuímica",
+            "wiki": "https://infinitythewiki.com/MetaChemistry?version=n4"
+        },
+        {
+            "id": 56,
+            "name": "Minador",
+            "wiki": "https://infinitythewiki.com/Minelayer?version=n4"
+        },
+        {
+            "id": 58,
+            "name": "Terreno",
+            "wiki": "https://infinitythewiki.com/Terrain?version=n4"
+        },
+        {
+            "id": 59,
+            "name": "Observador de Artillería",
+            "wiki": "https://infinitythewiki.com/Forward_Observer?version=n4"
+        },
+        {
+            "id": 60,
+            "name": "Piloto",
+            "wiki": "https://infinitythewiki.com/Pilot?version=n4"
+        },
+        {
+            "id": 61,
+            "name": "Reacción Total",
+            "wiki": "https://infinitythewiki.com/Total_Reaction?version=n4"
+        },
+        {
+            "id": 62,
+            "name": "Regeneración",
+            "wiki": "https://infinitythewiki.com/Regeneration?version=n4"
+        },
+        {
+            "id": 64,
+            "name": "Sanitario",
+            "wiki": "https://infinitythewiki.com/Paramedic?version=n4"
+        },
+        {
+            "id": 65,
+            "name": "Sensor",
+            "wiki": "https://infinitythewiki.com/Sensor?version=n4"
+        },
+        {
+            "id": 66,
+            "name": "Semilla-Embrión",
+            "wiki": "https://infinitythewiki.com/Seed-Embryo?version=n4"
+        },
+        {
+            "id": 67,
+            "name": "Sexto Sentido",
+            "wiki": "https://infinitythewiki.com/Sixth_Sense?version=n4"
+        },
+        {
+            "id": 69,
+            "name": "Strategos N1",
+            "wiki": "https://infinitythewiki.com/Strategos?version=n4"
+        },
+        {
+            "id": 70,
+            "name": "Strategos N2",
+            "wiki": "https://infinitythewiki.com/Strategos?version=n4"
+        },
+        {
+            "id": 71,
+            "name": "Strategos N3",
+            "wiki": "https://infinitythewiki.com/Strategos?version=n4"
+        },
+        {
+            "id": 72,
+            "name": "Protheion",
+            "wiki": "https://infinitythewiki.com/Protheion?version=n4"
+        },
+        {
+            "id": 73,
+            "name": "Morpho-scan",
+            "wiki": "https://infinitythewiki.com/Morpho-Scan?version=n4"
+        },
+        {
+            "id": 74,
+            "name": "Súper-Salto",
+            "wiki": "https://infinitythewiki.com/Super-Jump?version=n4"
+        },
+        {
+            "id": 82,
+            "name": "Trepar Plus",
+            "wiki": "https://infinitythewiki.com/Climbing_Plus?version=n4"
+        },
+        {
+            "id": 83,
+            "name": "Tropa Religiosa",
+            "wiki": "https://infinitythewiki.com/Religious_Troop?version=n4"
+        },
+        {
+            "id": 84,
+            "name": "Coraje",
+            "wiki": "https://infinitythewiki.com/Courage?version=n4"
+        },
+        {
+            "id": 85,
+            "name": "Tenaz",
+            "wiki": "https://infinitythewiki.com/Dogged?version=n4"
+        },
+        {
+            "id": 86,
+            "name": "Sin Incapacidad por Herida",
+            "wiki": "https://infinitythewiki.com/No_Wound_Incapacitation?version=n4"
+        },
+        {
+            "id": 88,
+            "name": "Veterano",
+            "wiki": "https://infinitythewiki.com/Veteran?version=n4"
+        },
+        {
+            "id": 89,
+            "name": "Zapador",
+            "wiki": "https://infinitythewiki.com/Sapper?version=n4"
+        },
+        {
+            "id": 109,
+            "name": "Neurocinética",
+            "wiki": "https://infinitythewiki.com/Neurocinetics?version=n4"
+        },
+        {
+            "id": 119,
+            "name": "Teniente",
+            "wiki": "https://infinitythewiki.com/Lieutenant?version=n4"
+        },
+        {
+            "id": 120,
+            "name": "Fireteam: Core",
+            "wiki": "https://infinitythewiki.com/Types_of_Fireteam#FIRETEAM:_CORE?version=n4"
+        },
+        {
+            "id": 121,
+            "name": "Fireteam: Haris",
+            "wiki": "https://infinitythewiki.com/Fireteam:_Haris?version=n4"
+        },
+        {
+            "id": 122,
+            "name": "Nº2",
+            "wiki": "https://infinitythewiki.com/Number_2?version=n4"
+        },
+        {
+            "id": 125,
+            "name": "Fireteam: Enomotarca",
+            "wiki": "https://infinitythewiki.com/Fireteam:_Enomotarchos?version=n4"
+        },
+        {
+            "id": 127,
+            "name": "Reportero N1"
+        },
+        {
+            "id": 129,
+            "name": "Fireteam: Tríada",
+            "wiki": "https://infinitythewiki.com/Fireteam:_Triad?version=n4"
+        },
+        {
+            "id": 131,
+            "name": "Descubrir",
+            "wiki": "https://infinitythewiki.com/Discover?version=n4"
+        },
+        {
+            "id": 132,
+            "name": "Civil"
+        },
+        {
+            "id": 138,
+            "name": "Bioinmunidad",
+            "wiki": "https://infinitythewiki.com/Bioimmunity?version=n4"
+        },
+        {
+            "id": 156,
+            "name": "Puntería",
+            "wiki": "https://infinitythewiki.com/Marksmanship?version=n4"
+        },
+        {
+            "id": 161,
+            "name": "Desp. Avanzado",
+            "wiki": "https://infinitythewiki.com/Forward_Deployment?version=n4"
+        },
+        {
+            "id": 162,
+            "name": "Inmunidad",
+            "wiki": "https://infinitythewiki.com/Immunity?version=n4"
+        },
+        {
+            "id": 164,
+            "name": "Sigilo",
+            "wiki": "https://infinitythewiki.com/Stealth?version=n4"
+        },
+        {
+            "id": 181,
+            "name": "Fireteam: Dúo",
+            "wiki": "https://infinitythewiki.com/Fireteam:_Duo?version=n4"
+        },
+        {
+            "id": 189,
+            "name": "Operativo Especialista",
+            "wiki": "https://infinitythewiki.com/Specialist_Operative?version=n4"
+        },
+        {
+            "id": 191,
+            "name": "Ataque Sorpresa",
+            "wiki": "https://infinitythewiki.com/Surprise_Attack?version=n4"
+        },
+        {
+            "id": 201,
+            "name": "Ataque CD",
+            "wiki": "https://infinitythewiki.com/BS_Attack?version=n4"
+        },
+        {
+            "id": 204,
+            "name": "Infinity Spec-Ops"
+        },
+        {
+            "id": 207,
+            "name": "Contrainteligencia",
+            "wiki": "https://infinitythewiki.com/Counterintelligence?version=n4"
+        },
+        {
+            "id": 211,
+            "name": "Suboficial",
+            "wiki": "https://infinitythewiki.com/NCO?version=n4"
+        },
+        {
+            "id": 213,
+            "name": "Sentido Táctico",
+            "wiki": "https://infinitythewiki.com/Tactical_Awareness?version=n4"
+        },
+        {
+            "id": 215,
+            "name": "Señuelo",
+            "wiki": "https://infinitythewiki.com/Decoy?version=n4"
+        },
+        {
+            "id": 219,
+            "name": "Tri-Core",
+            "wiki": "https://infinitythewiki.com/Tri-Core?version=n4"
+        },
+        {
+            "id": 220,
+            "name": "Vulnerabilidad",
+            "wiki": "https://infinitythewiki.com/Vulnerability?version=n4"
+        },
+        {
+            "id": 235,
+            "name": "Presencia Remota",
+            "wiki": "https://infinitythewiki.com/Remote_Presence?version=n4"
+        },
+        {
+            "id": 237,
+            "name": "Shasvastii",
+            "wiki": "https://infinitythewiki.com/Shasvastii?version=n4"
+        },
+        {
+            "id": 238,
+            "name": "Despliegue Oculto",
+            "wiki": "https://infinitythewiki.com/Hidden_Deployment?version=n4"
+        },
+        {
+            "id": 240,
+            "name": "Ataque CC",
+            "wiki": "https://infinitythewiki.com/CC_Attack?version=n4"
+        },
+        {
+            "id": 241,
+            "name": "Disparo Triangulado",
+            "wiki": "https://infinitythewiki.com/Triangulated_Fire?version=n4"
+        },
+        {
+            "id": 242,
+            "name": "Ataque Triangulado",
+            "wiki": "https://infinitythewiki.com/Triangulated_Fire?version=n4"
+        },
+        {
+            "id": 243,
+            "name": "Periférico",
+            "wiki": "https://infinitythewiki.com/Peripheral?version=n4"
+        },
+        {
+            "id": 246,
+            "name": "Transmutación",
+            "wiki": "https://infinitythewiki.com/Transmutation?version=n4"
+        },
+        {
+            "id": 247,
+            "name": "Guardián",
+            "wiki": "https://infinitythewiki.com/Guard?version=n4"
+        },
+        {
+            "id": 248,
+            "name": "Mnemotecno",
+            "wiki": "https://infinitythewiki.com/Mnemonica?version=n4"
+        },
+        {
+            "id": 249,
+            "name": "Suplantación",
+            "wiki": "https://infinitythewiki.com/Impersonation?version=n4"
+        },
+        {
+            "id": 250,
+            "name": "Frenesí",
+            "wiki": "https://infinitythewiki.com/Frenzy?version=n4"
+        },
+        {
+            "id": 251,
+            "name": "Desp. Estratégico",
+            "wiki": "https://infinitythewiki.com/Strategic_Deployment?version=n4"
+        },
+        {
+            "id": 252,
+            "name": "G: Jumper",
+            "wiki": "https://infinitythewiki.com/G:_Jumper?version=n4"
+        },
+        {
+            "id": 253,
+            "name": "Fireteam: Tríada Especial",
+            "wiki": "https://infinitythewiki.com/Fireteam:_Triad?version=n4"
+        },
+        {
+            "id": 254,
+            "name": "Gizmokit"
+        },
+        {
+            "id": 255,
+            "name": "RemDriver",
+            "wiki": "https://infinitythewiki.com/Remdriver?version=n4"
+        },
+        {
+            "id": 256,
+            "name": "Impetuoso",
+            "wiki": "https://infinitythewiki.com/Impetuous?version=n4"
+        },
+        {
+            "id": 257,
+            "name": "Reportero N2"
+        },
+        {
+            "id": 1000,
+            "name": "Hacker",
+            "wiki": "https://infinitythewiki.com/Hacker?version=n4"
+        }
+    ],
+    "equips": [
+        {
+            "id": 24,
+            "name": "Holomáscara",
+            "wiki": "https://infinitythewiki.com/HoloMask?version=n4"
+        },
+        {
+            "id": 63,
+            "name": "Repetidor",
+            "wiki": "https://infinitythewiki.com/Repeater?version=n4"
+        },
+        {
+            "id": 91,
+            "name": "Bagaje",
+            "wiki": "https://infinitythewiki.com/Baggage?version=n4"
+        },
+        {
+            "id": 100,
+            "name": "Disp. Hacker",
+            "wiki": "https://infinitythewiki.com/Hacking_Device?version=n4"
+        },
+        {
+            "id": 101,
+            "name": "Disp. Hacker Plus",
+            "wiki": "https://infinitythewiki.com/Hacking_Device#Hacking_Device_Plus?version=n4"
+        },
+        {
+            "id": 102,
+            "name": "ECM",
+            "wiki": "https://infinitythewiki.com/ECM?version=n4"
+        },
+        {
+            "id": 104,
+            "name": "Holoproyector",
+            "wiki": "https://infinitythewiki.com/Holoprojector?version=n4"
+        },
+        {
+            "id": 106,
+            "name": "MediKit",
+            "wiki": "https://infinitythewiki.com/MediKit?version=n4"
+        },
+        {
+            "id": 107,
+            "name": "Moto",
+            "wiki": "https://infinitythewiki.com/Motorcycle?version=n4"
+        },
+        {
+            "id": 108,
+            "name": "Nanopantalla",
+            "wiki": "https://infinitythewiki.com/Nanoscreen?version=n4"
+        },
+        {
+            "id": 111,
+            "name": "Repetidor de Posición",
+            "wiki": "https://infinitythewiki.com/Deployable_Repeater?version=n4"
+        },
+        {
+            "id": 113,
+            "name": "Visor 360º",
+            "wiki": "https://infinitythewiki.com/360º_Visor?version=n4"
+        },
+        {
+            "id": 114,
+            "name": "Visor Multiespectral N1",
+            "wiki": "https://infinitythewiki.com/Multispectral_Visor?version=n4"
+        },
+        {
+            "id": 115,
+            "name": "Visor Multiespectral N2",
+            "wiki": "https://infinitythewiki.com/Multispectral_Visor?version=n4"
+        },
+        {
+            "id": 116,
+            "name": "Visor Multiespectral N3",
+            "wiki": "https://infinitythewiki.com/Multispectral_Visor?version=n4"
+        },
+        {
+            "id": 117,
+            "name": "Visor X",
+            "wiki": "https://infinitythewiki.com/X-Visor?version=n4"
+        },
+        {
+            "id": 137,
+            "name": "Sistema de Escape",
+            "wiki": "https://infinitythewiki.com/Escape_System?version=n4"
+        },
+        {
+            "id": 145,
+            "name": "Disp. Hacker Asesino",
+            "wiki": "https://infinitythewiki.com/Hacking_Device#Killer_Hacking_Device?version=n4"
+        },
+        {
+            "id": 169,
+            "name": "TinBot: Firewall",
+            "wiki": "https://infinitythewiki.com/TinBot?version=n4"
+        },
+        {
+            "id": 182,
+            "name": "Disp. Hacker EVO",
+            "wiki": "https://infinitythewiki.com/Hacking_Device#EVO_Hacking_Device?version=n4"
+        },
+        {
+            "id": 183,
+            "name": "Albedo",
+            "wiki": "https://infinitythewiki.com/Albedo?version=n4"
+        },
+        {
+            "id": 184,
+            "name": "Visor Biométrico",
+            "wiki": "https://infinitythewiki.com/Biometric_Visor?version=n4"
+        },
+        {
+            "id": 188,
+            "name": "TinBot: Neourocinética",
+            "wiki": "https://infinitythewiki.com/TinBot?version=n4"
+        },
+        {
+            "id": 193,
+            "name": "TinBot (Albedo)",
+            "wiki": "https://infinitythewiki.com/TinBot?version=n4"
+        },
+        {
+            "id": 205,
+            "name": "Moto IA",
+            "wiki": "https://infinitythewiki.com/AI_Motorcycle?version=n4"
+        },
+        {
+            "id": 233,
+            "name": "ECM Avanzado",
+            "wiki": "https://infinitythewiki.com/ECM?version=n4"
+        },
+        {
+            "id": 235,
+            "name": "TinBot",
+            "wiki": "https://infinitythewiki.com/TinBot?version=n4"
+        },
+        {
+            "id": 237,
+            "name": "GizmoKit",
+            "wiki": "https://infinitythewiki.com/GizmoKit?version=n4"
+        },
+        {
+            "id": 238,
+            "name": "Desactivador",
+            "wiki": "https://infinitythewiki.com/Deactivator?version=n4"
+        },
+        {
+            "id": 239,
+            "name": "ECM: Guiado",
+            "wiki": "https://infinitythewiki.com/ECM?version=n4"
+        },
+        {
+            "id": 240,
+            "name": "FastPanda",
+            "wiki": "https://infinitythewiki.com/FastPanda?version=n4"
+        },
+        {
+            "id": 241,
+            "name": "ECM: Hacker",
+            "wiki": "https://infinitythewiki.com/ECM?version=n4"
+        },
+        {
+            "id": 242,
+            "name": "SymbioMate",
+            "wiki": "https://infinitythewiki.com/SymbioMate?version=n4"
+        },
+        {
+            "id": 243,
+            "name": "Dazer",
+            "wiki": "https://infinitythewiki.com/Dazer?version=n4"
+        },
+        {
+            "id": 244,
+            "name": "TinBot: Descubrir",
+            "wiki": "https://infinitythewiki.com/TinBot?version=n4"
+        }
+    ],
+    "hack": [
+        {
+            "opponent": "0",
+            "skillType": [
+                "short",
+                "aro"
+            ],
+            "special": "Mun. DA.  Estado: Inmovilizado, Ataque de Comunicaciones ",
+            "extra": 13,
+            "damage": "13",
+            "devices": [
+                100,
+                101
+            ],
+            "target": [
+                "TAG",
+                "IP",
+                "REM",
+                "Hacker"
+            ],
+            "attack": "0",
+            "name": "Carbonita",
+            "burst": "2"
+        },
+        {
+            "opponent": "0",
+            "special": "Mun.  DA. Estado: POS/NORMAL.  Ataque de Comunicaciones",
+            "skillType": [
+                "short",
+                "aro"
+            ],
+            "extra": 15,
+            "damage": "16",
+            "devices": [
+                100,
+                101
+            ],
+            "target": [
+                "TAG"
+            ],
+            "attack": "0",
+            "name": "Control Total",
+            "burst": "1"
+        },
+        {
+            "opponent": "-",
+            "special": "Sustituye al Hacker por un Marcador de Suplantación Estado 2.",
+            "skillType": [
+                "entire order"
+            ],
+            "extra": 289,
+            "damage": "-",
+            "devices": [
+                145,
+                101
+            ],
+            "target": [],
+            "attack": "-",
+            "name": "Cybermask",
+            "burst": "-"
+        },
+        {
+            "opponent": "-",
+            "special": "La Miniatura objetivo gana Puntería.",
+            "skillType": [
+                "entire order"
+            ],
+            "extra": 18,
+            "damage": "-",
+            "devices": [
+                182
+            ],
+            "target": [
+                "REM"
+            ],
+            "attack": "-",
+            "name": "Disparo Asistido",
+            "burst": "-"
+        },
+        {
+            "opponent": "-",
+            "special": "Los objetivos obtienen el MOD de Firewall.",
+            "skillType": [
+                "short"
+            ],
+            "extra": 17,
+            "damage": "-",
+            "devices": [
+                182
+            ],
+            "target": [
+                "TAG",
+                "IP",
+                "REM"
+            ],
+            "attack": "-",
+            "name": "Fairy Dust",
+            "burst": "-"
+        },
+        {
+            "opponent": "0",
+            "special": "Mun. AP. Estado: Aislado.  Ataque de Comunicaciones",
+            "skillType": [
+                "short",
+                "aro"
+            ],
+            "extra": 21,
+            "damage": "16",
+            "devices": [
+                100,
+                101
+            ],
+            "target": [
+                "TAG",
+                "IP",
+                "REM",
+                "Hacker"
+            ],
+            "attack": "0",
+            "name": "Oblivion",
+            "burst": "2"
+        },
+        {
+            "opponent": "-",
+            "special": "El objetivo obtiene R2 en ORA.",
+            "skillType": [
+                "entire order"
+            ],
+            "extra": 19,
+            "damage": "-",
+            "devices": [
+                182
+            ],
+            "target": [
+                "REM"
+            ],
+            "attack": "-",
+            "name": "Reacción Mejorada",
+            "burst": "-"
+        },
+        {
+            "opponent": "-",
+            "special": "Retroalimentación. Reflectante: Plantilla Circular sin LDT para Visores Multiespectrales",
+            "skillType": [
+                "short"
+            ],
+            "extra": 20,
+            "damage": "-",
+            "devices": [
+                101
+            ],
+            "target": [],
+            "attack": "-",
+            "name": "Ruido Blanco",
+            "burst": "1"
+        },
+        {
+            "opponent": "-",
+            "special": "MOD de +3/-3 a FIS de todas las Tropas que ejecutan Salto de Combate.",
+            "skillType": [
+                "short",
+                "aro"
+            ],
+            "extra": 16,
+            "damage": "-",
+            "devices": [
+                182
+            ],
+            "target": [],
+            "attack": "-",
+            "name": "Salto controlado",
+            "burst": "-"
+        },
+        {
+            "opponent": "0",
+            "skillType": [
+                "short",
+                "aro"
+            ],
+            "special": "Estado: Marcado.  Ataque de Comunicaciones",
+            "extra": 14,
+            "damage": "--",
+            "devices": [
+                100,
+                101
+            ],
+            "attack": "0",
+            "name": "Spotlight",
+            "burst": "1",
+            "target": []
+        },
+        {
+            "opponent": "0",
+            "special": "Pérdida de 1 punto de Heridas/EST.  Ataque de Comunicaciones",
+            "skillType": [
+                "short",
+                "aro"
+            ],
+            "extra": 12,
+            "damage": "14",
+            "devices": [
+                145
+            ],
+            "target": [
+                "Hacker"
+            ],
+            "attack": "+3",
+            "name": "Trinity",
+            "burst": "3"
+        },
+        {
+            "opponent": "-3",
+            "special": "Anula Ataque de Comunicaciones, R2 en ORA, No Letal.  Ataque de Comunicaciones.",
+            "skillType": [
+                "short",
+                "aro"
+            ],
+            "extra": 287,
+            "damage": "-",
+            "target": [],
+            "attack": "0",
+            "name": "Zero Pain",
+            "burst": "2"
+        }
+    ],
+    "martialArts": [
+        {
+            "opponent": "-3",
+            "damage": "+1",
+            "attack": "0",
+            "name": "1",
+            "burst": "0"
+        },
+        {
+            "opponent": "-3",
+            "damage": "+1",
+            "attack": "+3",
+            "name": "2",
+            "burst": "0"
+        },
+        {
+            "opponent": "-3",
+            "damage": "+2",
+            "attack": "+3",
+            "name": "3",
+            "burst": "0"
+        },
+        {
+            "opponent": "-3",
+            "damage": "+3",
+            "attack": "+3",
+            "name": "4",
+            "burst": "0"
+        },
+        {
+            "opponent": "-3",
+            "damage": "+3",
+            "attack": "+3",
+            "name": "5",
+            "burst": "+1"
+        }
+    ],
+    "metachemistry": [
+        {
+            "name": "1-3",
+            "id": 1,
+            "value": "+3 FIS"
+        },
+        {
+            "name": "4-5",
+            "id": 4,
+            "value": "Súper-Salto"
+        },
+        {
+            "name": "6-7",
+            "id": 6,
+            "value": "Regeneración "
+        },
+        {
+            "name": "8-10",
+            "id": 8,
+            "value": "Trepar Plus"
+        },
+        {
+            "name": "11-12",
+            "id": 11,
+            "value": "MOV: 20-10"
+        },
+        {
+            "name": "13-14",
+            "id": 13,
+            "value": "+6 PB"
+        },
+        {
+            "name": "15",
+            "id": 15,
+            "value": "Sin Incapacidad Por Herida"
+        },
+        {
+            "name": "16",
+            "id": 16,
+            "value": "+1 BLI + Bioinmunidad"
+        },
+        {
+            "name": "17",
+            "id": 17,
+            "value": "Tenaz + Inmunidad (Total)"
+        },
+        {
+            "name": "18",
+            "id": 18,
+            "value": "MOV: 15-10 + Súper-Salto"
+        },
+        {
+            "name": "19",
+            "id": 19,
+            "value": "MOV: 20-10 + Trepar Plus"
+        },
+        {
+            "name": "20",
+            "id": 20,
+            "value": "+3 FIS + Regeneración"
+        }
+    ],
+    "booty": [
+        {
+            "name": "1-2",
+            "id": 1,
+            "value": "+1 BLI"
+        },
+        {
+            "name": "2-4",
+            "id": 2,
+            "value": "Lanzallamas Lig"
+        },
+        {
+            "name": "5-6",
+            "id": 5,
+            "value": "Granadas"
+        },
+        {
+            "name": "7-8",
+            "id": 7,
+            "value": "Arma CC DA"
+        },
+        {
+            "name": "9",
+            "id": 9,
+            "value": "Visor Multiespectral N1"
+        },
+        {
+            "name": "10",
+            "id": 10,
+            "value": "Arma CC EXP"
+        },
+        {
+            "name": "11",
+            "id": 11,
+            "value": "Lanza-Adhesivo"
+        },
+        {
+            "name": "12",
+            "id": 12,
+            "value": "+2 BLI"
+        },
+        {
+            "name": "13",
+            "id": 13,
+            "value": "Panzerfaust"
+        },
+        {
+            "name": "14",
+            "id": 14,
+            "value": "Arma CC Monofilo"
+        },
+        {
+            "name": "15",
+            "id": 15,
+            "value": "MOV 20-10"
+        },
+        {
+            "name": "16",
+            "id": 16,
+            "value": "Fusil MULTI"
+        },
+        {
+            "name": "17",
+            "id": 17,
+            "value": "Fusil Francotirador MULTI"
+        },
+        {
+            "name": "18",
+            "id": 18,
+            "value": "+4 BLI"
+        },
+        {
+            "name": "19",
+            "id": 19,
+            "value": "Mimetismo (-6)"
+        },
+        {
+            "name": "20",
+            "id": 20,
+            "value": "Ametralladora (HMG)"
+        }
+    ]
+}
