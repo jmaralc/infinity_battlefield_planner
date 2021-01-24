@@ -56,8 +56,14 @@ class TestArmyUnitTestSuit:
 
         assert unit.threshold_hit(CombiRifle.MediumBadRange) == 10
 
+    def test_a_vanilla_BS13_unit_with_combi_in_bad_range_has_target_threshold_of_7(self,):
+        unit = ArmyUnit(bs=13)
+        unit.weapon = CombiRifle()
 
-def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_BS13_unit():
+        assert unit.threshold_hit(CombiRifle.BadRange) == 7
+
+
+def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_BS13_unit_with_null_weapon():
     
     encounter_context = {
         "shooter": ArmyUnit(bs=13)
@@ -66,28 +72,24 @@ def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting
     result = compute_encounter(encounter_context)
     
     assert result["hit"] == 0.65
-    assert result["critical"] == 0.05
-    assert result["miss"] == 0.35
 
-def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS10_unit_targeting_null_state_unit():
+def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_combi_in_good_range():
+    shooter = ArmyUnit(bs=13)
+    shooter.weapon = CombiRifle()
     encounter_context = {
-        "shooter": ArmyUnit(bs=10)
+        "shooter": shooter,
+        "distance": CombiRifle.GoodRange
     }
 
     result = compute_encounter(encounter_context)
     
-    assert result["hit"] == 0.5
-    assert result["critical"] == 0.05
-    assert result["miss"] == 0.5
+    assert result["hit"] == 0.8
 
 def compute_encounter(context):
-    shooter = context["shooter"]
+    shooter  = context["shooter"]
+    distance = context.get("distance")
 
-    hit         = shooter.threshold_hit()/20.0
-    miss        = 1 - hit
-    critical    = 1/20.0
+    hit         = shooter.threshold_hit(distance) /20.0
     return {
         "hit": hit,
-        "critical": critical,
-        "miss": miss
     }
