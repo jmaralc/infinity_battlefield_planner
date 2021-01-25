@@ -1,6 +1,5 @@
-import pytest
+from src.army.weapon import CombiRifle, NullWeapon
 
-from src.army.weapon import CombiRifle, NullWeapon, Weapon
 
 class TestWeaponTestSuit:
     def test_a_weapon_has_a_modifier_based_on_range(self,):
