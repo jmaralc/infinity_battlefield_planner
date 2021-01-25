@@ -9,18 +9,18 @@ class ArmyUnit:
     def __init__(
         self, cc=0, bs=0, ph=0, wip=0, arm=0, bts=0, w=0, ava=0, points=0, scw=0
     ):
-        self.cc = cc
-        self.bs = bs
-        self.ph = ph
-        self.wip = wip
-        self.arm = arm
-        self.bts = bts
-        self.w = w
-        self.ava = ava
+        self.cc     = cc
+        self.bs     = bs
+        self.ph     = ph
+        self.wip    = wip
+        self.arm    = arm
+        self.bts    = bts
+        self.w      = w
+        self.ava    = ava
         self.points = points
-        self.scw = scw
+        self.scw    = scw
         self.weapon = NullWeapon()
-        self.skills = []
+        self.skills = set()
         self.cover = NoCover()
 
     def threshold_to_hit(self, range=0):
@@ -28,8 +28,8 @@ class ArmyUnit:
 
     def modifier_to_defend(self):
         modifier = 0
-        if len(self.skills) > 0:
-            modifier += self.skills[0].modifier_to_hit()
+        for skill in self.skills: #make this work with non defensive skills
+            modifier += skill.modifier_to_hit()
         modifier += self.cover.modifier_to_hit()
         return modifier
     
@@ -47,7 +47,7 @@ class UnitBuilder:
         return self
 
     def mimetism(self, modifier=-3):
-        self.unit.skills.append(Mimetism(modifier))
+        self.unit.skills.add(Mimetism(modifier))
         return self
 
     def no_cover(self):
