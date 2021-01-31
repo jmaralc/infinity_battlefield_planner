@@ -68,3 +68,8 @@ class TestArmyUnitTestSuit:
         unit = UnitBuilder().vanilla().ballistics(13).mimetism().build()
 
         assert unit.modifier_to_defend() == -3
+
+    def test_a_vanilla_unit_saving_threshold_is_phisical(self,):  # noqa
+        unit = UnitBuilder().vanilla().physical(10).build()
+
+        assert unit.threshold_to_save() == 10

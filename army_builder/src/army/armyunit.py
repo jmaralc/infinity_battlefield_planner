@@ -28,11 +28,11 @@ class ArmyUnit:
         return self.bs + self.weapon.modifier_at(range)
     
     def threshold_to_save(self):
-        return 20  # For now... always fail, most likely will have to change
+        return self.ph  # TODO: For now use physical... 
 
     def modifier_to_defend(self):
         modifier = 0
-        for skill in self.skills:  # make this work with non defensive skills
+        for skill in self.skills:  # TODO: make this work with non defensive skills
             modifier += skill.modifier_to_hit()
         modifier += self.cover.modifier_to_hit()
         return modifier
@@ -59,6 +59,10 @@ class UnitBuilder:
 
     def ballistics(self, profile=10):
         self.unit.bs = profile
+        return self
+
+    def physical(self, profile=10):
+        self.unit.ph = profile
         return self
 
     def mimetism(self, modifier=-3):

@@ -2,8 +2,39 @@ from src.army.armyunit import UnitBuilder
 from src.army.weapon import CombiRifle
 from src.army.encounter import Encounter
 
+import pytest
+
 
 class TestEncounterCalculator:
+    
+    @pytest.mark.skip
+    def test_calculate_wound_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_combi(self):  # noqa
+        encounter = Encounter({
+            "shooter": UnitBuilder().vanilla().ballistics(13).build(),
+            "target": UnitBuilder().vanilla().build(),
+            "distance": 1
+        })
+
+        result = encounter.compute()
+
+        assert result["no_wounds"] == 0.65
+        assert result["one_wound"] == 0.65
+        assert result["two_wounds"] == 0.65
+    
+    
+    def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_combi_with_saves_PH10(self):  # noqa
+        encounter = Encounter({
+            "shooter": UnitBuilder().vanilla().ballistics(13).build(),
+            "target": UnitBuilder().vanilla().physical(10).build(),
+            "distance": 1
+        })
+
+        result = encounter.compute_with_saves()
+
+        # TODO: This should be checked i dont think im saving correctly
+        #       Current assumption is 0.65 (BS13 + 3 COMBI - 16/20) to hit x 0.5 to save (PH 10? 10/20)
+        assert result["hit"] == 0.325
+        
 
     def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_null_weapon(self):  # noqa
 

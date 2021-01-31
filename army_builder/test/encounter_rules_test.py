@@ -31,7 +31,7 @@ class TestEncounterAttackToSaveRules:
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10,),
-            "target": UnitBuilder().build(),
+            "target": UnitBuilder().physical(20).build(),
             "target_rolls": (21,),
             "distance": 1
         })
@@ -47,7 +47,7 @@ class TestEncounterAttackHitRules:
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10,),
-            "target": UnitBuilder().build(),
+            "target": UnitBuilder().physical(20).build(),
             "target_rolls": (1,),
             "distance": 1
         })
@@ -60,7 +60,7 @@ class TestEncounterAttackHitRules:
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10, 20),
-            "target": UnitBuilder().build(),
+            "target": UnitBuilder().physical(20).build(),
             "target_rolls": (1,),
             "distance": 1
         })
@@ -74,7 +74,7 @@ class TestEncounterAttackHitRules:
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (16, 16),
-            "target": UnitBuilder().build(),
+            "target": UnitBuilder().physical(20).build(),
             "target_rolls": (1,),
             "distance": 1
         })
@@ -88,7 +88,7 @@ class TestEncounterAttackHitRules:
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (20,),
-            "target": UnitBuilder().build(),
+            "target": UnitBuilder().physical(20).build(),
             "target_rolls": (1,),
             "distance": 1
         })
@@ -102,7 +102,7 @@ class TestEncounterAttackHitRules:
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10,),
-            "target": UnitBuilder().build(),
+            "target": UnitBuilder().physical(20).build(),
             "target_rolls": (21,),
             "distance": 1
         })
@@ -115,7 +115,7 @@ class TestEncounterAttackHitRules:
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10, 10),
-            "target": UnitBuilder().build(),
+            "target": UnitBuilder().physical(20).build(),
             "target_rolls": (21, 1),
             "distance": 1
         })
