@@ -5,7 +5,11 @@ class DiceRoller:
 
     def all_rolls(self):
         rolls = []
-        self.__generate_rolls((), rolls)
+        if self.dice_count > 1:
+            self.__generate_rolls((), rolls)
+        else:
+            for face in range(1, 21):
+                rolls.append(face)
         return rolls
     
     def __generate_rolls(self, current_roll, rolls):
@@ -51,7 +55,7 @@ class TestDiceRollerTest:
         rolls = roller.all_rolls()
 
         assert len(rolls) == 20
-        assert rolls[0] == (1,)  # Make this pretty...
-        assert rolls[19] == (20,)
+        assert rolls[0] == 1
+        assert rolls[19] == 20
         
         
