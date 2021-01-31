@@ -32,8 +32,9 @@ class AttackHitsRule(Rule):
         s_threshold = shooter.threshold_to_hit(distance) + target.modifier_to_defend()
         s_rolls = context["shooter_rolls"]     
         
-        hits = True
-        if s_rolls > s_threshold:
-            hits = False
+        hits = (s_rolls <= s_threshold)  # Make it work for multiple rolls
+        criticals = 0
+        if s_rolls == s_threshold:
+            criticals += 1            
 
-        return {"hits": hits}
+        return {"hits": hits, "criticals": criticals}

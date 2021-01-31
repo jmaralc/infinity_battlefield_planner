@@ -39,6 +39,20 @@ class TestEncounterAttackHitRules:
 
         assert outcome["hits"] is True
 
+    def test_attack_hit_rule_returns_if_hit_is_critical(self,):
+        rule = AttackHitsRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
+            "shooter_rolls": (16),
+            "target": UnitBuilder().build(),
+            "target_rolls": (1),
+            "distance": 1
+        })
+
+        assert outcome["criticals"] == 1
+
+
     def test_attack_hit_rule_returns_false_if_roll_missess_hit_threshold(self,):  # noqa
         rule = AttackHitsRule()
 
