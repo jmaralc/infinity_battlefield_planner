@@ -1,5 +1,5 @@
 from src.army.armyunit import UnitBuilder
-from src.army.attack import AttackHitsRule
+from src.army.attack import AttackHitsRule, SavesHitRule
 import pytest
 
 
@@ -23,6 +23,20 @@ class TestEncounterRules:
             rule = AttackHitsRule()
             rule.resolve()
 
+
+class TestEncounterAttackSaveRules:
+    def test_attack_save_rule_returns_true_if_saves(self,):
+        rule = SavesHitRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
+            "shooter_rolls": (10,),
+            "target": UnitBuilder().build(),
+            "target_rolls": (21,),
+            "distance": 1
+        })
+
+        assert outcome["saves"] is True
 
 class TestEncounterAttackHitRules:
 

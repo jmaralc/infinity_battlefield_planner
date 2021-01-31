@@ -23,7 +23,7 @@ class AttackHitsRule(Rule):
         super().__init__(["shooter", "shooter_rolls", "target", "target_rolls", "distance"])
     
     def resolve(self, context={}):
-        super().resolve(context)
+        super().resolve(context)  # TODO: Did not find how to call __check from here
         
         shooter = context["shooter"]
         target = context["target"]
@@ -45,3 +45,24 @@ class AttackHitsRule(Rule):
                 criticals_count += 1
 
         return {"hits": hits, "criticals_count": criticals_count}
+
+
+class SavesHitRule(Rule):
+    def __init__(self):
+        super().__init__(["target", "target_rolls"])
+    
+    def resolve(self, context={}):
+        super().resolve(context)
+       
+        target = context["target"]
+        t_rolls = context["target_rolls"]     
+        t_threshold = target.threshold_to_save()
+
+        saves_count = 0
+        saves = False
+        for roll in t_rolls:
+            if roll > t_threshold:
+                saves_count += 1
+                saves = True
+
+        return {"saves": saves, "saves_count": saves_count}
