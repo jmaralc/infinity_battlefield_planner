@@ -26,6 +26,9 @@ class ArmyUnit:
 
     def threshold_to_hit(self, range=0):
         return self.bs + self.weapon.modifier_at(range)
+    
+    def threshold_to_save(self):
+        return 0
 
     def modifier_to_defend(self):
         modifier = 0
