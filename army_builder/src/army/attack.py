@@ -25,24 +25,17 @@ class AttackHitsRule(Rule):
     def resolve(self, context={}):
         super().resolve(context)
         
-        hits = True
-
         shooter = context["shooter"]
         target = context["target"]
         distance = context["distance"]
         
         s_threshold = shooter.threshold_to_hit(distance) + target.modifier_to_defend()
-        s_rolls = context["shooter_rolls"]
+        s_rolls = context["shooter_rolls"]     
+
+        print(s_rolls)
         
-        t_threshold = target.threshold_to_save()
-        t_rolls = context["target_rolls"]
-        
-        if s_rolls > s_threshold:  # Make it work with multiple rolls
+        hits = True
+        if s_rolls > s_threshold:
             hits = False
-        else:
-            hits = True
-            if t_rolls > t_threshold:  # Make it work with multiple rolls
-                hits = False 
-            
 
         return {"hits": hits}

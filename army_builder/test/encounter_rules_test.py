@@ -52,6 +52,7 @@ class TestEncounterAttackHitRules:
 
         assert outcome["hits"] is False
     
+    @pytest.mark.skip
     def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_saves_it(self,):  # noqa
         rule = AttackHitsRule()
 
