@@ -9,7 +9,8 @@ class TestEncounterCalculator:
 
         encounter = Encounter({
             "shooter": UnitBuilder().vanilla().ballistics(13).build(),
-            "target": UnitBuilder().vanilla().build()
+            "target": UnitBuilder().vanilla().build(),
+            "distance": None
         })
 
         result = encounter.compute()
