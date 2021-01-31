@@ -24,7 +24,7 @@ class TestEncounterRules:
             rule.resolve()
 
 
-class TestEncounterAttackSaveRules:
+class TestEncounterAttackToSaveRules:
     def test_attack_save_rule_returns_true_if_saves(self,):
         rule = ToSaveRule()
 
@@ -37,6 +37,7 @@ class TestEncounterAttackSaveRules:
         })
 
         assert outcome["saves"] is True
+        assert outcome["saves_count"] == 1
 
 class TestEncounterAttackHitRules:
 
@@ -67,7 +68,6 @@ class TestEncounterAttackHitRules:
         assert outcome["hits"] is True
 
 
-
     def test_attack_hit_rule_returns_criticals_count_if_hit_is_critical(self,):
         rule = AttackHitsRule()
 
@@ -86,7 +86,7 @@ class TestEncounterAttackHitRules:
         rule = AttackHitsRule()
 
         outcome = rule.resolve({
-            "shooter": UnitBuilder().combi_rifle().build(),
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (20,),
             "target": UnitBuilder().build(),
             "target_rolls": (1,),
@@ -95,25 +95,39 @@ class TestEncounterAttackHitRules:
 
         assert outcome["hits"] is False
     
-    @pytest.mark.skip
+    
     def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_saves_it(self,):  # noqa
         rule = AttackHitsRule()
 
         outcome = rule.resolve({
-            "shooter": UnitBuilder().combi_rifle().build(),
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10,),
             "target": UnitBuilder().build(),
-            "target_rolls": (21),
+            "target_rolls": (21,),
             "distance": 1
         })
 
         assert outcome["hits"] is False
+
+    def test_attack_hit_rule_returns_true_if_at_least_one_roll_doesnt_save(self,):  # noqa
+        rule = AttackHitsRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
+            "shooter_rolls": (10, 10),
+            "target": UnitBuilder().build(),
+            "target_rolls": (21, 1),
+            "distance": 1
+        })
+
+        assert outcome["hits"] is True
+        assert outcome["hits_count"] == 1
     
     @pytest.mark.skip
     def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_shoots_and_cancels_it(self,):  # noqa
         pass
 
     @pytest.mark.skip
-    def test_attack_hit_rule_returns_wounded_if_enemy_roll_hits(self,):  # noqa
+    def test_attack_hit_rule_returns_shooter_wounded_if_enemy_roll_hits(self,):  # noqa
         pass
     
