@@ -28,7 +28,7 @@ class ArmyUnit:
         return self.bs + self.weapon.modifier_at(range)
     
     def threshold_to_save(self):
-        return 0
+        return 20  # For now... always fail, most likely will have to change
 
     def modifier_to_defend(self):
         modifier = 0

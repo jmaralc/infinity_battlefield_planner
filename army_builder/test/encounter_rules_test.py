@@ -36,10 +36,10 @@ class AttackHitsRule(Rule):
         distance = context["distance"]
         
         s_threshold = shooter.threshold_to_hit(distance)
-        s_rolls = context["target_rolls"]
+        s_rolls = context["shooter_rolls"]
         
         t_threshold = target.threshold_to_save()
-        t_rolls = target.threshold_to_save()
+        t_rolls = context["target_rolls"]
         
         if s_rolls > s_threshold:  # Make it work with multiple rolls
             hits = False
@@ -79,7 +79,7 @@ class TestEncounterAttackHitRules:
         rule = AttackHitsRule()
 
         outcome = rule.resolve({
-            "shooter": UnitBuilder().combi_rifle().build(),
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10),
             "target": UnitBuilder().build(),
             "target_rolls": (1),
@@ -88,14 +88,36 @@ class TestEncounterAttackHitRules:
 
         assert outcome["hits"] is True
 
-    @pytest.mark.skip
     def test_attack_hit_rule_returns_false_if_roll_missess_hit_threshold(self,):  # noqa
-        pass
+        rule = AttackHitsRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().combi_rifle().build(),
+            "shooter_rolls": (20),
+            "target": UnitBuilder().build(),
+            "target_rolls": (1),
+            "distance": 1
+        })
+
+        assert outcome["hits"] is False
+    
+    def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_saves_it(self,):  # noqa
+        rule = AttackHitsRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().combi_rifle().build(),
+            "shooter_rolls": (10),
+            "target": UnitBuilder().build(),
+            "target_rolls": (21),
+            "distance": 1
+        })
+
+        assert outcome["hits"] is False
     
     @pytest.mark.skip
-    def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_roll_cancels_it(self,):  # noqa
+    def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_shoots_and_cancels_it(self,):  # noqa
         pass
-    
+
     @pytest.mark.skip
     def test_attack_hit_rule_returns_wounded_if_enemy_roll_hits(self,):  # noqa
         pass
