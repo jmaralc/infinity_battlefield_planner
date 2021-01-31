@@ -1,5 +1,5 @@
 from src.army.armyunit import UnitBuilder
-from src.army.attack import AttackHitsRule, SavesHitRule
+from src.army.attack import AttackHitsRule, ToSaveRule
 import pytest
 
 
@@ -12,7 +12,7 @@ class TestEncounterRules:
             "shooter": UnitBuilder().build(),
             "shooter_rolls": (10,),
             "target": UnitBuilder().build(),
-            "target_rolls": (1),
+            "target_rolls": (1,),
             "distance": 1
         })
 
@@ -26,7 +26,7 @@ class TestEncounterRules:
 
 class TestEncounterAttackSaveRules:
     def test_attack_save_rule_returns_true_if_saves(self,):
-        rule = SavesHitRule()
+        rule = ToSaveRule()
 
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
@@ -47,7 +47,7 @@ class TestEncounterAttackHitRules:
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10,),
             "target": UnitBuilder().build(),
-            "target_rolls": (1),
+            "target_rolls": (1,),
             "distance": 1
         })
 
@@ -60,7 +60,7 @@ class TestEncounterAttackHitRules:
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10, 20),
             "target": UnitBuilder().build(),
-            "target_rolls": (1),
+            "target_rolls": (1,),
             "distance": 1
         })
 
@@ -73,9 +73,9 @@ class TestEncounterAttackHitRules:
 
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
-            "shooter_rolls": (16,16),
+            "shooter_rolls": (16, 16),
             "target": UnitBuilder().build(),
-            "target_rolls": (1),
+            "target_rolls": (1,),
             "distance": 1
         })
 
@@ -89,7 +89,7 @@ class TestEncounterAttackHitRules:
             "shooter": UnitBuilder().combi_rifle().build(),
             "shooter_rolls": (20,),
             "target": UnitBuilder().build(),
-            "target_rolls": (1),
+            "target_rolls": (1,),
             "distance": 1
         })
 
