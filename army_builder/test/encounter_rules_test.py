@@ -29,9 +29,8 @@ class AttackHitsRule(Rule):
     def apply(self, context={}):
         super().apply(context)
         # Do some magic here
-        return True
+        return {"hits": False}
         
-
 
 class TestEncounterRules:
 
@@ -52,3 +51,18 @@ class TestEncounterRules:
             rule = AttackHitsRule()
             rule.apply()
 
+
+class TestEncounterAttackHitRules:
+
+    def test_attack_hit_rule_returns_true_if_hit(self,):
+        rule = AttackHitsRule()
+
+        outcome = rule.apply({
+            "shooter": UnitBuilder().combi_rifle().build(),
+            "shooter_rolls": (10),
+            "target": UnitBuilder().build,
+            "target_rolls": (1)
+        })
+
+        assert outcome["hits"] is True
+    
