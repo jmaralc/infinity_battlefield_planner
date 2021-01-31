@@ -4,11 +4,7 @@ class DiceRoller:
 
     def all_rolls(self):
         rolls = []
-        if self.dice_count > 1:
-            self.__generate_rolls((), rolls)
-        else:
-            for face in range(1, 21):
-                rolls.append(face)
+        self.__generate_rolls((), rolls)  # TODO: Turn this into an object later on because of single digit tuple 
         return rolls
     
     def __generate_rolls(self, current_roll, rolls):

@@ -37,7 +37,7 @@ class TestDiceRollerTest:
         rolls = roller.all_rolls()
 
         assert len(rolls) == 20
-        assert rolls[0] == 1
-        assert rolls[19] == 20
+        assert rolls[0] == (1,)
+        assert rolls[19] == (20,)
         
         

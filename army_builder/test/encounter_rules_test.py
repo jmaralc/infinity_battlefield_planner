@@ -10,7 +10,7 @@ class TestEncounterRules:
 
         outcome = rule.resolve({
             "shooter": UnitBuilder().build(),
-            "shooter_rolls": (10),
+            "shooter_rolls": (10,),
             "target": UnitBuilder().build(),
             "target_rolls": (1),
             "distance": 1
@@ -31,7 +31,7 @@ class TestEncounterAttackHitRules:
 
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
-            "shooter_rolls": (10),
+            "shooter_rolls": (10,),
             "target": UnitBuilder().build(),
             "target_rolls": (1),
             "distance": 1
@@ -39,18 +39,33 @@ class TestEncounterAttackHitRules:
 
         assert outcome["hits"] is True
 
-    def test_attack_hit_rule_returns_if_hit_is_critical(self,):
+    def test_attack_hit_rule_returns_true_if_at_least_one_hit(self,):
         rule = AttackHitsRule()
 
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
-            "shooter_rolls": (16),
+            "shooter_rolls": (10, 20),
             "target": UnitBuilder().build(),
             "target_rolls": (1),
             "distance": 1
         })
 
-        assert outcome["criticals"] == 1
+        assert outcome["hits"] is True
+
+
+
+    def test_attack_hit_rule_returns_criticals_count_if_hit_is_critical(self,):
+        rule = AttackHitsRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
+            "shooter_rolls": (16,16),
+            "target": UnitBuilder().build(),
+            "target_rolls": (1),
+            "distance": 1
+        })
+
+        assert outcome["criticals_count"] == 2
 
 
     def test_attack_hit_rule_returns_false_if_roll_missess_hit_threshold(self,):  # noqa
@@ -58,7 +73,7 @@ class TestEncounterAttackHitRules:
 
         outcome = rule.resolve({
             "shooter": UnitBuilder().combi_rifle().build(),
-            "shooter_rolls": (20),
+            "shooter_rolls": (20,),
             "target": UnitBuilder().build(),
             "target_rolls": (1),
             "distance": 1
@@ -72,7 +87,7 @@ class TestEncounterAttackHitRules:
 
         outcome = rule.resolve({
             "shooter": UnitBuilder().combi_rifle().build(),
-            "shooter_rolls": (10),
+            "shooter_rolls": (10,),
             "target": UnitBuilder().build(),
             "target_rolls": (21),
             "distance": 1
