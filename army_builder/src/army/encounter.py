@@ -19,7 +19,7 @@ class Encounter():
             context = self.context.copy()
             context["shooter_rolls"] = roll
             rule_outcome = attack_rule.resolve(context)
-            if rule_outcome["hits"] is True:
+            if rule_outcome["shooter_hits"] is True:
                 total_hits += 1
         encounter_outcome["shooter_hits"] = total_hits / len(rolls)
 
