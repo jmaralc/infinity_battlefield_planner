@@ -20,7 +20,7 @@ class Rule:
 
 class AttackHitsRule(Rule):
     def __init__(self):
-        self.hits_rule = ToHitRule()
+        self.hits_rule = UncontestedToHitRule()
         self.saves_rule = ToSaveRule()
 
     def resolve(self, context={}):
@@ -39,9 +39,9 @@ class AttackHitsRule(Rule):
         return attack_outcome
 
 
-class ToHitRule(Rule):
+class UncontestedToHitRule(Rule):
     def __init__(self):
-        super().__init__(["shooter", "shooter_rolls", "target", "target_rolls", "distance"])
+        super().__init__(["shooter", "shooter_rolls", "target", "distance"])
     
     def resolve(self, context={}):
         super().resolve(context)  # TODO: Did not find how to call __check from here
@@ -54,18 +54,16 @@ class ToHitRule(Rule):
         s_rolls = context["shooter_rolls"]     
         
         hits_count = 0
+        criticals_count = 0
         hits = False
         for roll in s_rolls:
             if roll <= s_threshold:
                 hits_count += 1
                 hits = True
-        
-        criticals_count = 0
-        for roll in s_rolls:
-            if roll == s_threshold:
-                criticals_count += 1
-
-        return {"hits": hits,  "hits_count": hits_count, "criticals_count": criticals_count}
+                if roll == s_threshold:
+                    criticals_count += 1
+        misses_count = len(s_rolls) - hits_count
+        return {"hits": hits,  "hits_count": hits_count, "criticals_count": criticals_count, "misses_count": misses_count}
 
 
 class ToSaveRule(Rule):
