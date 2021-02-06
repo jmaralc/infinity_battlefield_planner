@@ -69,7 +69,12 @@ class TestArmyUnitTestSuit:
 
         assert unit.modifier_to_defend() == -3
 
-    def test_a_vanilla_unit_saving_threshold_is_phisical(self,):  # noqa
-        unit = UnitBuilder().vanilla().physical(10).build()
+    def test_a_unit_with_no_cover_saving_threshold_is_shooter_weapon_damage_minus_armor(self,):  # noqa
+        unit = UnitBuilder().vanilla().build()
 
-        assert unit.threshold_to_save() == 10
+        assert unit.threshold_to_save(CombiRifle()) == 12
+
+    def test_a_unit_with_cover_saving_threshold_is_shooter_weapon_damage_minus_armor_minus_cover(self,):  # noqa
+        unit = UnitBuilder().vanilla().partial_cover().build()
+
+        assert unit.threshold_to_save(CombiRifle()) == 9

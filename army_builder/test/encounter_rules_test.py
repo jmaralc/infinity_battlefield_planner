@@ -46,13 +46,27 @@ class TestEncounterAttackToSaveRules:
         outcome = rule.resolve({
             "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
             "shooter_rolls": (10,),
-            "target": UnitBuilder().physical(20).build(),
-            "target_rolls": (21,),
+            "target": UnitBuilder().armor(1).build(),
+            "target_rolls": (13,),
             "distance": 1
         })
 
         assert outcome["saves"] is True
         assert outcome["saves_count"] == 1
+
+    def test_attack_save_rule_returns_false_if_fails(self,):
+        rule = ToSaveRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
+            "shooter_rolls": (10,),
+            "target": UnitBuilder().armor(1).build(),
+            "target_rolls": (12,),
+            "distance": 1
+        })
+
+        assert outcome["saves"] is False
+        assert outcome["saves_count"] == 0
 
 class TestEncounterAttackHitRules:
 

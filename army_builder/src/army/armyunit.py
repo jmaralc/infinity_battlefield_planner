@@ -27,8 +27,8 @@ class ArmyUnit:
     def threshold_to_hit(self, range=0):
         return self.bs + self.weapon.modifier_at(range)
     
-    def threshold_to_save(self):
-        return self.ph  # TODO: For now use physical... 
+    def threshold_to_save(self, weapon):
+        return weapon.damage - self.arm + self.cover.modifier_to_hit()  # TODO: make sure this works for weapons that use different saving attribute
 
     def modifier_to_defend(self):
         modifier = 0
@@ -59,6 +59,10 @@ class UnitBuilder:
 
     def ballistics(self, profile=10):
         self.unit.bs = profile
+        return self
+
+    def armor(self, profile=10):
+        self.unit.arm = profile
         return self
 
     def physical(self, profile=10):

@@ -24,23 +24,24 @@ class TestEncounterCalculator:
     
     def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_combi_with_saves_PH10(self):  # noqa
         encounter = Encounter({
-            "shooter": UnitBuilder().vanilla().ballistics(13).build(),
-            "target": UnitBuilder().vanilla().physical(10).build(),
+            "shooter": UnitBuilder().vanilla().ballistics(13).combi_rifle().build(),
+            "target": UnitBuilder().vanilla().build(),
             "distance": 1
         })
 
         result = encounter.compute_with_saves()
 
+        print(result)
         # TODO: This should be checked i dont think im saving correctly
-        #       Current assumption is 0.65 (BS13 + 3 COMBI - 16/20) to hit x 0.5 to save (PH 10? 10/20)
-        assert result["hit"] == 0.325
+        #       Current assumption is 0.65 (BS13 + 3 COMBI = 16/20) to hit x 0.4 to save (DM13 - 1ARM - 0 COVER = 8/20)
+        assert result["hit"] == 0.26
         
 
     def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_null_weapon(self):  # noqa
 
         encounter = Encounter({
             "shooter": UnitBuilder().vanilla().ballistics(13).build(),
-            "target": UnitBuilder().vanilla().build(),
+            "target": UnitBuilder().vanilla().armor(1).build(),
             "distance": None
         })
 

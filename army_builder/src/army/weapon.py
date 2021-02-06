@@ -1,6 +1,6 @@
 class Weapon:
-    def __init__(self):
-        pass
+    def __init__(self, damage=0):
+        self.damage = damage
 
     def modifier_at(self, range):
         pass
@@ -11,10 +11,19 @@ class NullWeapon(Weapon):
         return 0
 
 
-class CombiRifle(Weapon):
+class BallisticWeapon(Weapon):
+    def __init__(self, damage=0, burst=1):
+        self.damage = damage
+        self.burst = burst
+
+
+class CombiRifle(BallisticWeapon):
     GoodRange = 16
     MediumBadRange = 32
     BadRange = 48
+
+    def __init__(self):
+        super().__init__(damage=13, burst=3)
 
     def modifier_at(self, range):
         result = 0

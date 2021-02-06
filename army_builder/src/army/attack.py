@@ -73,9 +73,10 @@ class ToSaveRule(Rule):
     def resolve(self, context={}):
         super().resolve(context)
        
+        shooter = context["shooter"]
         target = context["target"]
         t_rolls = context["target_rolls"]     
-        t_threshold = target.threshold_to_save()
+        t_threshold = target.threshold_to_save(shooter.weapon)
 
         saves_count = 0
         saves = False
