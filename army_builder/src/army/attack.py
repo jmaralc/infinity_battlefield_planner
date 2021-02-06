@@ -11,7 +11,7 @@ class Rule:
         
         for key in self.__needed_context_keys:
             if key not in context:
-                keys.append(keys)
+                keys.append(key)
     
         if len(keys) > 0:         
             message = "The following context keys are missing {0!s}".format(keys)

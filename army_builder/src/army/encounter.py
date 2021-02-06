@@ -15,7 +15,7 @@ class Encounter():
         dice_roller = DiceRoller()
         rolls = dice_roller.all_rolls()
 
-        for roll in dice_roller.all_rolls():
+        for roll in rolls:
             context = self.context.copy()
             context["shooter_rolls"] = roll
             context["target_rolls"] = (1,)  # For now pay no attention to this
