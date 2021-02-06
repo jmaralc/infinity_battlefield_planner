@@ -68,6 +68,7 @@ class TestEncounterAttackToSaveRules:
         assert outcome["saves"] is False
         assert outcome["saves_count"] == 0
 
+
 class TestEncounterAttackHitRules:
 
     def test_attack_hit_rule_returns_true_if_hit(self,):

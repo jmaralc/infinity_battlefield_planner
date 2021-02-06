@@ -1,4 +1,4 @@
-from src.army.weapon import BallisticWeapon, CombiRifle, NullWeapon, Weapon
+from src.army.weapon import BallisticWeapon, CombiRifle, NullWeapon
 
 
 class TestWeaponTestSuit:

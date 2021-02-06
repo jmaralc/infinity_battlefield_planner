@@ -8,13 +8,13 @@ class Rule:
 
     def __check_context_keys(self, context):
         keys = []
-        
+
         for key in self.__needed_context_keys:
             if key not in context:
                 keys.append(key)
-    
-        if len(keys) > 0:         
-            message = "The following context keys are missing {0!s}".format(keys)
+
+        if len(keys) > 0:
+            message = "The following context keys are missing {0!s}".format(keys) 
             raise Exception(message)
 
 

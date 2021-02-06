@@ -26,7 +26,7 @@ class ArmyUnit:
 
     def threshold_to_hit(self, range=0):
         return self.bs + self.weapon.modifier_at(range)
-    
+
     def threshold_to_save(self, weapon):
         return weapon.damage - self.arm + self.cover.modifier_to_hit()  # TODO: make sure this works for weapons that use different saving attribute
 

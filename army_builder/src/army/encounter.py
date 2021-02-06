@@ -8,7 +8,7 @@ class Encounter():
         self.context = context
 
     def compute(self):
-        encounter_outcome = {"hit": 0}
+        encounter_outcome = {"shooter_hits": 0}
         total_hits = 0
 
         attack_rule = UncontestedToHitRule()
@@ -21,7 +21,7 @@ class Encounter():
             rule_outcome = attack_rule.resolve(context)
             if rule_outcome["hits"] is True:
                 total_hits += 1
-        encounter_outcome["hit"] = total_hits / len(rolls)
+        encounter_outcome["shooter_hits"] = total_hits / len(rolls)
 
         return encounter_outcome
 
@@ -46,6 +46,7 @@ class Encounter():
                 if rule_outcome["hits"] is True:
                     total_hits += 1
         
-        encounter_outcome["hit"] = total_hits / total_rolls
+        encounter_outcome["shooter_hits"] = total_hits / total_rolls
+        encounter_outcome["shooter_misses"] = 1 - encounter_outcome["shooter_hits"]
 
         return encounter_outcome
