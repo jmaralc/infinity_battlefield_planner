@@ -31,7 +31,6 @@ class TestEncounterCalculator:
 
         result = encounter.compute_with_saves()
 
-        print(result)
         # TODO: This should be checked i dont think im saving correctly
         #       Current assumption is 0.65 (BS13 + 3 COMBI = 16/20) to hit x 0.6 to not save (DM13 - 1ARM - 0 COVER = 12/20)
         #       0.65 * 0.6 = 0.48
