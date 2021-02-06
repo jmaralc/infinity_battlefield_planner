@@ -22,7 +22,7 @@ class TestEncounterCalculator:
         assert result["two_wounds"] == 0.65
     
     
-    def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_combi_with_saves_PH10(self):  # noqa
+    def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_combi_with_ARM1(self):  # noqa
         encounter = Encounter({
             "shooter": UnitBuilder().vanilla().ballistics(13).combi_rifle().build(),
             "target": UnitBuilder().vanilla().build(),
