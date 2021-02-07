@@ -22,7 +22,6 @@ class TestWeaponTestSuit:
 
         assert weapon.damage == 13
     
-
     def test_a_combi_has_a_modifier_based_on_range(self,):
         weapon = CombiRifle()
 

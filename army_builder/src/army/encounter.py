@@ -1,4 +1,4 @@
-from src.army.attack import AttackHitsRule, UncontestedAttackRule, UncontestedToHitRule
+from src.army.attack import UncontestedAttackRule, UncontestedToHitRule
 from src.army.dice import DiceRoller
 
 
@@ -30,7 +30,6 @@ class Encounter():
         total_hits = 0
 
         attack_rule = UncontestedAttackRule()
-        
         shooter_rolls = DiceRoller().all_rolls()
         target_rolls = DiceRoller().all_rolls()
         

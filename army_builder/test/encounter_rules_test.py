@@ -1,12 +1,12 @@
 from src.army.armyunit import UnitBuilder
-from src.army.attack import AttackHitsRule, UncontestedAttackRule, UncontestedToHitRule, ToSaveRule
+from src.army.attack import UncontestedAttackRule, UncontestedToHitRule, ToSaveRule
 import pytest
 
 
 class TestEncounterRules:
 
     def test_rule_returns_an_outcome(self,):
-        rule = AttackHitsRule()
+        rule = ToSaveRule()
 
         outcome = rule.resolve({
             "shooter": UnitBuilder().build(),

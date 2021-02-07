@@ -68,8 +68,6 @@ class ToSaveRule(Rule):
 
         return {"saves": saves, "saves_count": saves_count}
 
-class AttackHitsRule(Rule):
-    pass
 
 class UncontestedAttackRule(Rule):
     def __init__(self):
@@ -77,14 +75,14 @@ class UncontestedAttackRule(Rule):
         self.saves_rule = ToSaveRule()
 
     def resolve(self, context={}):
-        
+
         outcome_hits = self.hits_rule.resolve(context)
         outcome_saves = self.saves_rule.resolve(context)
-        
+
         attack_outcome = {}
         attack_outcome.update(outcome_hits)
         attack_outcome.update(outcome_saves)
-        
+
         hits = (outcome_hits["hits_count"] > outcome_saves["saves_count"])
         attack_outcome["shooter_hits"] = hits
         attack_outcome["hits_count"] = outcome_hits["hits_count"] - outcome_saves["saves_count"]
