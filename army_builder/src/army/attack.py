@@ -41,6 +41,7 @@ class UncontestedToHitRule(Rule):
                 hits = True
                 if roll == s_threshold:
                     criticals_count += 1
+                    hits_count += 1
         misses_count = len(s_rolls) - hits_count
         return {"shooter_hits": hits,  "hits_count": hits_count, "criticals_count": criticals_count, "misses_count": misses_count}
 
