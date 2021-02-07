@@ -36,7 +36,7 @@ class Encounter():
         weapon = shooter.weapon
         shooter_rolls = DiceRoller(weapon.burst).all_rolls()
 
-        target_rolls_collection = [[(0,)]]
+        target_rolls_collection = [[(0,)]*20]
         for save_numbers in range(1, weapon.burst + 1):
             target_rolls_collection.append(
                 DiceRoller(save_numbers).all_rolls()
