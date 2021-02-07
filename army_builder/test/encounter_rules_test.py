@@ -73,7 +73,6 @@ class TestUncontestedToHitRules:
 
         assert outcome["shooter_hits"] is False
 
-    
 
 class TestToSaveRules:
     def test_attack_save_rule_returns_true_if_saves(self,):

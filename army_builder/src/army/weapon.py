@@ -22,8 +22,8 @@ class CombiRifle(BallisticWeapon):
     MediumBadRange = 32
     BadRange = 48
 
-    def __init__(self):
-        super().__init__(damage=13, burst=3)
+    def __init__(self, burst=3):
+        super().__init__(damage=13, burst=burst)
 
     def modifier_at(self, range):
         result = 0

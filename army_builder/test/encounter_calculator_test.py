@@ -36,15 +36,17 @@ class TestEncounterCalculator:
 
     def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_combi_with_ARM1(self):  # noqa
         encounter = Encounter({
-            "shooter": UnitBuilder().vanilla().ballistics(13).combi_rifle().build(),
+            "shooter": UnitBuilder().vanilla().ballistics(13).combi_rifle_b1().build(),
             "target": UnitBuilder().vanilla().build(),
             "distance": 1
         })
 
         result = encounter.compute_with_saves()
-
+        import pdb
+        pdb.set_trace()
+        
         # TODO: This should be checked i dont think im saving correctly
-        #       Current assumption is 0.65 (BS13 + 3 COMBI = 16/20) to hit x 0.6 to not save (DM13 - 1ARM - 0 COVER = 12/20)
+        #       Current assumption is 0.65 (BS13 + 3 range = 16/20) to hit x 0.6 to not save (DM13 - 1ARM - 0 COVER = 12/20)
         #       0.65 * 0.6 = 0.48
         assert result["shooter_hits"] == 0.48
         assert result["shooter_misses"] == 0.52
@@ -68,7 +70,7 @@ class TestEncounterCalculator:
                 UnitBuilder()
                 .vanilla()
                 .ballistics(13)
-                .combi_rifle()
+                .combi_rifle_b1()
                 .build()
             ),
             "target": UnitBuilder().vanilla().build(),
@@ -86,7 +88,7 @@ class TestEncounterCalculator:
                 UnitBuilder()
                 .vanilla()
                 .ballistics(13)
-                .combi_rifle()
+                .combi_rifle_b1()
                 .build()
             ),
             "target": UnitBuilder().vanilla().partial_cover().build(),
@@ -103,7 +105,7 @@ class TestEncounterCalculator:
                 UnitBuilder()
                 .vanilla()
                 .ballistics(13)
-                .combi_rifle()
+                .combi_rifle_b1()
                 .build()
             ),
             "target": UnitBuilder().vanilla().mimetism().build(),
@@ -120,7 +122,7 @@ class TestEncounterCalculator:
                 UnitBuilder()
                 .vanilla()
                 .ballistics(13)
-                .combi_rifle()
+                .combi_rifle_b1()
                 .build()
             ),
             "target": (
@@ -143,7 +145,7 @@ class TestEncounterCalculator:
                 UnitBuilder()
                 .vanilla()
                 .ballistics(13)
-                .combi_rifle()
+                .combi_rifle_b1()
                 .build()
             ),
             "target": (

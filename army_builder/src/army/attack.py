@@ -3,10 +3,10 @@ class Rule:
         self.__needed_context_keys = needed_context_keys
 
     def resolve(self, context={}):
-        self.__check_context_keys(context)
+        self.check_context_keys(context)
         return True
 
-    def __check_context_keys(self, context):
+    def check_context_keys(self, context):
         keys = []
 
         for key in self.__needed_context_keys:
@@ -14,26 +14,24 @@ class Rule:
                 keys.append(key)
 
         if len(keys) > 0:
-            message = "The following context keys are missing {0!s}".format(keys) 
+            message = "The following context keys are missing {0!s}".format(keys)
             raise Exception(message)
-
-
 
 
 class UncontestedToHitRule(Rule):
     def __init__(self):
         super().__init__(["shooter", "shooter_rolls", "target", "distance"])
-    
+
     def resolve(self, context={}):
-        super().resolve(context)  # TODO: Did not find how to call __check from here
-        
+        super().check_context_keys(context)  # TODO: learn black magic __
+
         shooter = context["shooter"]
         target = context["target"]
         distance = context["distance"]
-        
+
         s_threshold = shooter.threshold_to_hit(distance) + target.modifier_to_defend()
-        s_rolls = context["shooter_rolls"]     
-        
+        s_rolls = context["shooter_rolls"]
+
         hits_count = 0
         criticals_count = 0
         hits = False
@@ -56,7 +54,7 @@ class ToSaveRule(Rule):
        
         shooter = context["shooter"]
         target = context["target"]
-        t_rolls = context["target_rolls"]     
+        t_rolls = context["target_rolls"]
         t_threshold = target.threshold_to_save(shooter.weapon)
 
         saves_count = 0
@@ -73,6 +71,9 @@ class UncontestedAttackRule(Rule):
     def __init__(self):
         self.hits_rule = UncontestedToHitRule()
         self.saves_rule = ToSaveRule()
+
+    def resolve_hit(self, context={}):
+        return self.hits_rule.resolve(context)
 
     def resolve(self, context={}):
 

@@ -28,25 +28,34 @@ class Encounter():
     def compute_with_saves(self):
         encounter_outcome = {}
         total_hits = 0
+        total_outcomes = 0
 
-        # TODO: Due to conditionality of saves (per hit) this will not work when burst gets introduced
         attack_rule = UncontestedAttackRule()
-        shooter_rolls = DiceRoller().all_rolls()
-        target_rolls = DiceRoller().all_rolls()
-        
-        total_rolls = len(shooter_rolls) * len(target_rolls)
-        
+
+        shooter = self.context["shooter"]
+        weapon = shooter.weapon
+        shooter_rolls = DiceRoller(weapon.burst).all_rolls()
+
+        target_rolls_collection = [[(0,)]]
+        for save_numbers in range(1, weapon.burst + 1):
+            target_rolls_collection.append(
+                DiceRoller(save_numbers).all_rolls()
+            )
+ 
         for s_roll in shooter_rolls:
             context = self.context.copy()
             context["shooter_rolls"] = s_roll
-            
-            for t_roll in target_rolls:
+            hit_outcome = attack_rule.resolve_hit(context)
+            hits_count = hit_outcome["hits_count"]
+
+            for t_roll in target_rolls_collection[hits_count]:
                 context["target_rolls"] = t_roll
                 rule_outcome = attack_rule.resolve(context)
+                total_outcomes += 1
                 if rule_outcome["shooter_hits"] is True:
                     total_hits += 1
-        
-        encounter_outcome["shooter_hits"] = total_hits / total_rolls
+
+        encounter_outcome["shooter_hits"] = total_hits / total_outcomes
         encounter_outcome["shooter_misses"] = 1 - encounter_outcome["shooter_hits"]
 
         return encounter_outcome

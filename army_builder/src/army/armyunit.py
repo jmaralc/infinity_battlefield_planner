@@ -85,5 +85,9 @@ class UnitBuilder:
         self.unit.weapon = CombiRifle()
         return self
 
+    def combi_rifle_b1(self):
+        self.unit.weapon = CombiRifle(burst=1)
+        return self
+
     def build(self):
         return self.unit
