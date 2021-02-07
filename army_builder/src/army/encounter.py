@@ -29,6 +29,7 @@ class Encounter():
         encounter_outcome = {}
         total_hits = 0
 
+        # TODO: Due to conditionality of saves (per hit) this will not work when burst gets introduced
         attack_rule = UncontestedAttackRule()
         shooter_rolls = DiceRoller().all_rolls()
         target_rolls = DiceRoller().all_rolls()

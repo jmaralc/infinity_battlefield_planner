@@ -21,6 +21,19 @@ class TestEncounterCalculator:
         assert result["one_wound"] == 0.65
         assert result["two_wounds"] == 0.65
     
+    @pytest.mark.skip
+    def test_calculate_hit_probabilities_BS13_unit_targeting_with_combi(self):  # noqa
+        encounter = Encounter({
+            "shooter": UnitBuilder().vanilla().ballistics(13).combi_rifle().build(),
+            "target": UnitBuilder().vanilla().build(),
+            "distance": 1
+        })
+        
+        result = encounter.compute_with_saves_recursive()
+        
+        assert result["shooter_hits"] == 0.48
+        assert result["shooter_misses"] == 0.52
+
     def test_calculate_hit_probabilities_for_one_shot_of_vanilla_BS13_unit_targeting_vanilla_unit_with_combi_with_ARM1(self):  # noqa
         encounter = Encounter({
             "shooter": UnitBuilder().vanilla().ballistics(13).combi_rifle().build(),
