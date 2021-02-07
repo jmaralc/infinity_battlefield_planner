@@ -1,4 +1,4 @@
-from src.army.attack import AttackHitsRule, UncontestedToHitRule
+from src.army.attack import AttackHitsRule, UncontestedAttackRule, UncontestedToHitRule
 from src.army.dice import DiceRoller
 
 
@@ -26,10 +26,10 @@ class Encounter():
         return encounter_outcome
 
     def compute_with_saves(self):
-        encounter_outcome = {"hit": 0}
+        encounter_outcome = {}
         total_hits = 0
 
-        attack_rule = AttackHitsRule()
+        attack_rule = UncontestedAttackRule()
         
         shooter_rolls = DiceRoller().all_rolls()
         target_rolls = DiceRoller().all_rolls()
@@ -43,7 +43,7 @@ class Encounter():
             for t_roll in target_rolls:
                 context["target_rolls"] = t_roll
                 rule_outcome = attack_rule.resolve(context)
-                if rule_outcome["hits"] is True:
+                if rule_outcome["shooter_hits"] is True:
                     total_hits += 1
         
         encounter_outcome["shooter_hits"] = total_hits / total_rolls

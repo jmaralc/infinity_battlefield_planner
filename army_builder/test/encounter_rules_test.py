@@ -1,5 +1,5 @@
 from src.army.armyunit import UnitBuilder
-from src.army.attack import AttackHitsRule, UncontestedToHitRule, ToSaveRule
+from src.army.attack import AttackHitsRule, UncontestedAttackRule, UncontestedToHitRule, ToSaveRule
 import pytest
 
 
@@ -20,10 +20,10 @@ class TestEncounterRules:
 
     def test_rule_throws_exception_it_doenst_have_needed_params(self,):
         with pytest.raises(Exception):
-            rule = AttackHitsRule()
+            rule = UncontestedToHitRule()
             rule.resolve()
 
-class TestEncounterUncontestedToHitRules:
+class TestUncontestedToHitRules:
      
     def test_attack_hit_rule_returns_true_if_hit(self,):
         rule = UncontestedToHitRule()
@@ -73,34 +73,9 @@ class TestEncounterUncontestedToHitRules:
 
         assert outcome["shooter_hits"] is False
 
-    def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_saves_it(self,):  # noqa
-        rule = UncontestedToHitRule()
+    
 
-        outcome = rule.resolve({
-            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
-            "shooter_rolls": (10,),
-            "target": UnitBuilder().build(),
-            "target_rolls": (21,),
-            "distance": 1
-        })
-
-        assert outcome["shooter_hits"] is False
-
-    def test_attack_hit_rule_returns_true_if_at_least_one_roll_doesnt_save(self,):  # noqa
-        rule = UncontestedToHitRule()
-
-        outcome = rule.resolve({
-            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
-            "shooter_rolls": (10, 10),
-            "target": UnitBuilder().build(),
-            "target_rolls": (21, 1),
-            "distance": 1
-        })
-
-        assert outcome["shooter_hits"] is True
-        assert outcome["hits_count"] == 1
-
-class TestEncounterAttackToSaveRules:
+class TestToSaveRules:
     def test_attack_save_rule_returns_true_if_saves(self,):
         rule = ToSaveRule()
 
@@ -130,7 +105,35 @@ class TestEncounterAttackToSaveRules:
         assert outcome["saves_count"] == 0
 
 
-class TestEncounterContestedToHitRules:
+class TestEncounterUncontestedAttackRules:
+    def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_saves_it(self,):  # noqa
+        rule = UncontestedAttackRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
+            "shooter_rolls": (10,),
+            "target": UnitBuilder().build(),
+            "target_rolls": (21,),
+            "distance": 1
+        })
+
+        assert outcome["shooter_hits"] is False
+
+    def test_attack_hit_rule_returns_true_if_at_least_one_roll_doesnt_save(self,):  # noqa
+        rule = UncontestedAttackRule()
+
+        outcome = rule.resolve({
+            "shooter": UnitBuilder().ballistics(13).combi_rifle().build(),
+            "shooter_rolls": (10, 10),
+            "target": UnitBuilder().build(),
+            "target_rolls": (21, 1),
+            "distance": 1
+        })
+
+        assert outcome["shooter_hits"] is True
+        assert outcome["hits_count"] == 1
+
+class TestEncounterContestedAttackRules:
     
     @pytest.mark.skip
     def test_attack_hit_rule_returns_false_if_roll_under_threshold_but_enemy_shoots_and_cancels_it(self,):  # noqa
